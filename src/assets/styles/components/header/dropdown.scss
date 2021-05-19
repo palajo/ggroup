@@ -4,6 +4,23 @@
     .dropdown-value {
         cursor: pointer;
         text-transform: lowercase;
+
+        &::after {
+            content: '';
+            display: block;
+    
+            width: 0;
+            height: 1px;
+    
+            background: $primary;
+            transition: width .2s;
+        }
+    
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
     }
 
     .dropdown-content {
@@ -16,8 +33,28 @@
 
             li.dropdown-list-item {
                 a.dropdown-list-link {
+                    display: inline-block;
+        
+                    color: $primary;
                     text-transform: lowercase;
-                    line-height: 24px;
+                    text-decoration: none;
+                
+                    &::after {
+                        content: '';
+                        display: block;
+                
+                        width: 0;
+                        height: 1px;
+                
+                        background: $primary;
+                        transition: width .2s;
+                    }
+                
+                    &:hover {
+                        &::after {
+                            width: 20px;
+                        }
+                    }
 
                     &.current-language {
                         display: none;

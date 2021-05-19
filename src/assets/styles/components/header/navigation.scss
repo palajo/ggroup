@@ -17,8 +17,29 @@ ul.main-nav {
         }
 
         a.main-nav-link {
-            text-transform: lowercase;
+            display: inline-block;
             padding: 0 25px;
+
+            color: $primary;
+            text-transform: lowercase;
+            text-decoration: none;
+        
+            &::after {
+                content: '';
+                display: block;
+        
+                width: 0;
+                height: 1px;
+        
+                background: $primary;
+                transition: width .2s;
+            }
+        
+            &:hover {
+                &::after {
+                    width: 20px;
+                }
+            }
         }
     }
 }
