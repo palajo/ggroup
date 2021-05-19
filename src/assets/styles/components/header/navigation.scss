@@ -1,0 +1,24 @@
+ul.main-nav {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+
+    li.main-nav-item {
+        &:first-child {
+            a.main-nav-link {
+                padding-left: 0;
+            }
+        }
+        
+        &:last-child {
+            a.main-nav-link {
+                padding-right: 0;
+            }
+        }
+
+        a.main-nav-link {
+            text-transform: lowercase;
+            padding: 0 25px;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+section.section-services {
+    .services-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-left: -7.5px;
+        margin-right: -7.5px;
+
+        .service-block {
+            width: calc(25% - 15px);
+            margin: 0 7.5px;
+
+
+            padding: 25px;
+            border: 1px solid $primary;
+
+            .service-block-title {
+                display: flex;
+                align-items: center;
+
+                width: 100%;
+                margin-bottom: 15px;
+
+                font-size: 20px;
+                line-height: 24px;
+
+                font-weight: 500;
+                text-transform: uppercase;
+
+                img {
+                    height: 60px;
+                    margin-right: 20px;
+                }
+            }
+            .service-block-description {
+
+            }
+            .service-block-view-more {
+                margin-top: 25px;
+
+                a.view-more {
+                    position: relative;
+                    z-index: 1;
+
+                    width: 100%;
+
+                    div {
+                        width: fit-content;
+                        text-transform: lowercase;
+                        background: #fff;
+
+                        padding-right: 10px;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        z-index: -1;
+
+                        top: 50%;
+
+                        width: 40%;
+                        height: 1px;
+                
+                        background: $primary;
+                        transition: width .3s;
+                    }    
+                    
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

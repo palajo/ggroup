@@ -1,0 +1,29 @@
+.dropdown {
+    position: relative;
+
+    .dropdown-value {
+        cursor: pointer;
+        text-transform: lowercase;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+
+        ul.dropdown-list {
+            list-style: none;
+            margin-bottom: 0;
+
+            li.dropdown-list-item {
+                a.dropdown-list-link {
+                    text-transform: lowercase;
+                    line-height: 24px;
+
+                    &.current-language {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
