@@ -5,6 +5,8 @@
         cursor: pointer;
         text-transform: lowercase;
 
+        transition: 0.1s ease;
+
         &::after {
             content: '';
             display: block;
@@ -13,10 +15,12 @@
             height: 1px;
     
             background: $primary;
-            transition: width .2s;
+            transition: width 0.2s ease;
         }
     
         &:hover {
+            color: $secondary;
+
             &::after {
                 width: 100%;
             }
@@ -34,10 +38,14 @@
             li.dropdown-list-item {
                 a.dropdown-list-link {
                     display: inline-block;
-        
+
+                    padding: 2px 0;
+                    
                     color: $primary;
                     text-transform: lowercase;
                     text-decoration: none;
+                    
+                    transition: 0.1s ease;
                 
                     &::after {
                         content: '';
@@ -47,10 +55,12 @@
                         height: 1px;
                 
                         background: $primary;
-                        transition: width .2s;
+                        transition: width 0.2s ease;
                     }
                 
                     &:hover {
+                        color: $secondary;
+
                         &::after {
                             width: 20px;
                         }

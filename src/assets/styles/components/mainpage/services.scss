@@ -40,32 +40,39 @@ section.section-services {
 
                 a.view-more {
                     position: relative;
-                    z-index: 1;
+                    display: inline-block;
 
                     width: 100%;
+                    text-transform: lowercase;
+
+                    transition: 0.2s ease;
 
                     div {
                         width: fit-content;
-                        text-transform: lowercase;
                         background: #fff;
 
-                        padding-right: 10px;
+                        padding-right: 20px;
                     }
 
                     &::after {
+                        content: '';
                         position: absolute;
+                        
+                        top: 50%;
+                        left: 0;
+
+                        width: 50%;
+                        height: 1px;
+                        
+                        background: $primary;
                         z-index: -1;
 
-                        top: 50%;
+                        transition: width 0.3s ease;
+                    }
 
-                        width: 40%;
-                        height: 1px;
-                
-                        background: $primary;
-                        transition: width .3s;
-                    }    
-                    
                     &:hover {
+                        color: $secondary;
+
                         &::after {
                             width: 100%;
                         }

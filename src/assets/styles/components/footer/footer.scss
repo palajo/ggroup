@@ -1,0 +1,39 @@
+footer {
+    padding: 40px 0;
+    background: $primary;
+    color: #fff;
+
+    .container {
+        .row {
+            .left-block {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+                width: 33.33%;
+            }
+            .middle-block {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                width: 33.33%;
+
+                .footer-logo {
+                    width: 100%;
+                    margin-bottom: 40px;
+                    
+                    text-align: center;
+                }
+            }
+            .right-block {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                width: 33.33%;
+            }
+        }
+    }
+
+}

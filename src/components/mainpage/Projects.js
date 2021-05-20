@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
@@ -15,7 +16,9 @@ export function ProjectBlock(props) {
             </div>
             <div className="project-title-row">
                 <div className="project-title-title">
-                    {props.title}
+                    <a href="#">
+                        {props.title}
+                    </a>
                 </div>
                 <div className="project-full-view">
                     <a href="#" className="full-view">

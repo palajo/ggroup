@@ -42,46 +42,66 @@ section.section-projects {
                     line-height: 24px;
 
                     font-weight: 500;
-                }
 
-                .project-full-view {
-                    width: 40%;
-
-                    a.full-view {
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-end;
-    
-                        width: 100%;
-
-                        div {
-                            width: fit-content;
-                            text-transform: lowercase;
-                            background: #fff;
-    
-                            padding-right: 10px;
-                        }
-    
+                    a {
                         &::after {
-                            position: relative;
-                            z-index: -1;
-    
-                            top: 50%;
-    
-                            width: 20px;
+                            content: '';
+                            display: block;
+                    
+                            width: 0;
                             height: 1px;
                     
                             background: $primary;
-                            transition: width .3s;
-                        }    
-                        
+                            transition: width 0.2s ease;
+                        }
+                    
                         &:hover {
+                            color: $secondary;
+            
+                            &::after {
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .project-full-view {
+                    a.full-view {
+                        position: relative;
+
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+
+                        width: auto;
+
+                        text-transform: lowercase;
+
+                        div {
+                            background: white;
+                            padding-right: 20px;
+                        }
+
+                        &::after {
+                            display: block;
+                            content: '';
+
+                            width: 40px;
+                            height: 1px;
+                            
+                            background: $primary;
+
+                            transition: width 0.3s ease;
+                        }
+
+                        &:hover {
+                            color: $secondary;
+
                             &::after {
                                 width: 100px;
                             }
                         }
                     }
-
                 }
             }
         }

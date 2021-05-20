@@ -12,10 +12,10 @@ export default function Header() {
             $('.current-language').html(value);
 
             $('.dropdown').mouseenter(function() {
-                $(this).find('.dropdown-content').fadeIn(200)
+                $(this).find('.dropdown-content').stop().fadeIn(200)
             });
             $('.dropdown').mouseleave(function() {
-                $(this).find('.dropdown-content').fadeOut(100)
+                $(this).find('.dropdown-content').stop().fadeOut(100)
             });
         });
     });

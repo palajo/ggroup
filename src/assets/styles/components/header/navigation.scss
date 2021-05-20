@@ -23,6 +23,8 @@ ul.main-nav {
             color: $primary;
             text-transform: lowercase;
             text-decoration: none;
+
+            transition: 0.1s ease;
         
             &::after {
                 content: '';
@@ -32,10 +34,12 @@ ul.main-nav {
                 height: 1px;
         
                 background: $primary;
-                transition: width .2s;
+                transition: width 0.2s ease;
             }
         
             &:hover {
+                color: $secondary;
+
                 &::after {
                     width: 20px;
                 }

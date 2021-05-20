@@ -1,0 +1,53 @@
+.tabs {
+    width: 100%;
+    border: 1px solid $primary;
+
+    ul.tabs-nav {
+        display: flex;
+        list-style: none;
+        margin-bottom: 0;
+
+        li.tabs-nav-item {
+            width: 100%;
+
+            a.tabs-nav-link {
+                display: inline-block;
+                width: 100%;
+                padding: 20px 40px;
+
+                font-size: 24px;
+                line-height: 30px;
+                
+                color: #fff;
+                text-align: center;
+
+                background: $primary;
+
+                transition: 0.2s ease;
+
+                &:hover {
+                    background: $secondary;
+                }
+
+                &.active {
+                    background: #fff;
+                    color: $primary;
+
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        .tab-pane {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
