@@ -9,6 +9,7 @@ import Header from "./components/Header"
 
 import MainPage from "./routes/MainPage"
 import ProjectPage from "./routes/ProjectPage"
+import ErrorPage from './routes/ErrorPage'
 
 function App() {
     return(
@@ -18,6 +19,7 @@ function App() {
                 <Switch>
                     <Route component={MainPage} path="/" exact />
                     <Route component={ProjectPage} path="/project" exact />
+                    <Route component={ErrorPage} />
                 </Switch>
                 <Footer />
             </ScrollToTop>
