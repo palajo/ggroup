@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 
@@ -50,6 +55,8 @@ body {
     }
 }
 main {
+    min-height: calc(100vh - 115px);
+    
     section.section {
         padding: 50px 0;
     }

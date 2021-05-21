@@ -1,5 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import ServiceIcon1 from '../../assets/images/icons/services/icon-1.svg'
 import ServiceIcon2 from '../../assets/images/icons/services/icon-2.svg'
@@ -18,18 +18,18 @@ export function ServiceBlock(props) {
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
             </div>
             <div className="service-block-view-more">
-                <a className="view-more" href="#">
+                <NavLink className="view-more" to="#">
                     <div>
                         View more
                     </div>
-                </a>
+                </NavLink>
             </div>
         </div>
     )
 }
 export default function Services() {
     return (
-        <section className="section section-services double-padding-top">
+        <section className="section section-services">
             <div className="container">
                 <div className="row">
                     <div className="container-body">

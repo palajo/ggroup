@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
 import ClientLogo1 from '../../assets/images/clients/client-1.png'
@@ -24,6 +22,7 @@ import ClientLogo18 from '../../assets/images/clients/client-18.png'
 import ClientLogo19 from '../../assets/images/clients/client-19.png'
 import ClientLogo20 from '../../assets/images/clients/client-20.png'
 import ClientLogo21 from '../../assets/images/clients/client-21.png'
+import { NavLink } from 'react-router-dom'
 
 const clients = [
     {
@@ -115,9 +114,9 @@ const clients = [
 export function ClientBlock(props) {
     return (
         <div className="client-block">
-            <a href="#">
+            <NavLink to="#">
                 <img src={props.logo} />
-            </a>
+            </NavLink>
         </div>
     )
 }

@@ -26,41 +26,41 @@ export default function Header() {
                 <div className="row">
                     <div className="left-block">
                         <div className="logo">
-                            <a href="/">
+                            <NavLink to="/">
                                 <img src={Logo} alt="Globarch Group Logo" />
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                     <div className="right-block">
                         <div>
                             <ul className="main-nav">
                                 <li className="main-nav-item">
-                                    <NavLink to="#" className="main-nav-link">
+                                    <NavLink to="/services/architecture-planning" className="main-nav-link" exact>
                                         Architecture planning
                                     </NavLink>
                                 </li>
                                 <li className="main-nav-item">
-                                    <NavLink to="#" className="main-nav-link">
+                                    <NavLink to="/services/interior-design" className="main-nav-link" exact>
                                         Residental interior design
                                     </NavLink>
                                 </li>
                                 <li className="main-nav-item">
-                                    <NavLink to="#" className="main-nav-link">
+                                    <NavLink to="/services/furniture-design" className="main-nav-link" exact>
                                         Furniture design
                                     </NavLink>
                                 </li>
                                 <li className="main-nav-item">
-                                    <NavLink to="#" className="main-nav-link">
+                                    <NavLink to="/services/commercial-design" className="main-nav-link" exact>
                                         Commercial design
                                     </NavLink>
                                 </li>
                                 <li className="main-nav-item">
-                                    <NavLink to="#" className="main-nav-link">
+                                    <NavLink to="/about-us" className="main-nav-link" exact>
                                         About us
                                     </NavLink>
                                 </li>
                                 <li className="main-nav-item">
-                                    <NavLink to="#" className="main-nav-link">
+                                    <NavLink to="/contacts" className="main-nav-link" exact>
                                         Contacts
                                     </NavLink>
                                 </li>

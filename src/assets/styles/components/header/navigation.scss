@@ -44,6 +44,17 @@ ul.main-nav {
                     width: 20px;
                 }
             }
+
+            &.active {
+                &::after {
+                    width: 100%;
+                }
+                &:hover {
+                    &::after {
+                        width: 50%;
+                    }
+                }
+            }
         }
     }
 }

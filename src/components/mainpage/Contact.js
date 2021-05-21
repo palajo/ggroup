@@ -1,6 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react'
 import $ from 'jquery'
+import { NavLink } from 'react-router-dom';
 
 export default function Contact() {
     
@@ -27,14 +27,14 @@ export default function Contact() {
                     <div className="tabs">
                         <ul className="tabs-nav" id="contact-tabs" role="tablist">
                             <li className="tabs-nav-item">
-                                <a href="#" className="tabs-nav-link active" id="project-tab">
+                                <NavLink to="#" className="tabs-nav-link active" id="project-tab">
                                     I'm interested in project
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="tabs-nav-item">
-                                <a href="#" className="tabs-nav-link" id="career-tab">
+                                <NavLink to="#" className="tabs-nav-link" id="career-tab">
                                     I'm interested in a career
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                         <div className="tab-content" id="contact-tabs">
@@ -51,7 +51,7 @@ export default function Contact() {
                                                 </p>
                                             </div>
                                             <div className="offer-phone">
-                                                <a href="tel:+38 099 98 47 911">+38 099 98 47 911</a>
+                                                <NavLink to="tel:+38 099 98 47 911">+38 099 98 47 911</NavLink>
                                                 <span>or call</span>
                                             </div>
                                         </div>
@@ -137,7 +137,7 @@ export default function Contact() {
                                                 </p>
                                             </div>
                                             <div className="offer-phone">
-                                                <a href="tel:+38 099 98 47 911">+38 099 98 47 911</a>
+                                                <NavLink to="tel:+38 099 98 47 911">+38 099 98 47 911</NavLink>
                                                 <span>or call</span>
                                             </div>
                                         </div>

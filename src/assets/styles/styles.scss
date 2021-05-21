@@ -6,6 +6,14 @@
 @import './components/header/navigation.scss';
 @import './components/header/dropdown.scss';
 
+@import './components/form/form.scss';
+@import './components/tabs.scss';
+
+@import './components/footer/footer.scss';
+@import './components/footer/navigation.scss';
+@import './components/footer/get-in-touch.scss';
+
+// mainpage
 @import './components/mainpage/hero-banner.scss';
 @import './components/mainpage/services.scss';
 @import './components/mainpage/projects.scss';
@@ -13,9 +21,10 @@
 @import './components/mainpage/team.scss';
 @import './components/mainpage/contact.scss';
 
-@import './components/form/form.scss';
-@import './components/tabs.scss';
 
-@import './components/footer/footer.scss';
-@import './components/footer/navigation.scss';
-@import './components/footer/get-in-touch.scss';
+// project
+@import './components/project/hero-project.scss';
+@import './components/project/profile.scss';
+@import './components/project/navigation.scss';
+
+

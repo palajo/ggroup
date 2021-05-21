@@ -46,6 +46,20 @@ ul.footer-nav {
                     width: 70px;
                 }
             }
+
+            &.active {
+                &::before {
+                    margin-right: 10px;
+                    width: 20px;
+                } 
+
+                &:hover {
+                    &::before {
+                        margin-right: 30px;
+                        width: 70px;
+                    }
+                }
+            }
         }
     }
 
@@ -74,6 +88,20 @@ ul.footer-nav {
                     &::after {
                         margin-left: 30px;
                         width: 70px;
+                    }
+                }
+
+                &.active {
+                    &::after {
+                        margin-left: 10px;
+                        width: 20px;
+                    } 
+    
+                    &:hover {
+                        &::after {
+                            margin-left: 30px;
+                            width: 70px;
+                        }
                     }
                 }
             }

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import ProjectImage1 from '../../assets/images/projects/project-1.jpg'
 import ProjectImage2 from '../../assets/images/projects/project-2.jpg'
@@ -16,16 +16,16 @@ export function ProjectBlock(props) {
             </div>
             <div className="project-title-row">
                 <div className="project-title-title">
-                    <a href="#">
+                    <NavLink to="/project">
                         {props.title}
-                    </a>
+                    </NavLink>
                 </div>
                 <div className="project-full-view">
-                    <a href="#" className="full-view">
+                    <NavLink to="/project" className="full-view">
                         <div>
                             Full view
                         </div>
-                    </a>
+                    </NavLink>
                 </div>
             </div>
         </div>

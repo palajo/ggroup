@@ -3,6 +3,8 @@
 import React from 'react'
 
 import FooterLogo from '../assets/images/logo-white.svg'
+import LeadbrandingLogo from '../assets/images/leadbranding-white.svg'
+import { NavLink } from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -17,11 +19,14 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li className="footer-nav-item">
-                                <a href="#" className="footer-nav-link">
+                                <a href="mailto:globarch.info@gmail.com" className="footer-nav-link">
                                     globarch.info@gmail.com
                                 </a>
                             </li>
                         </ul>
+                        <div className="leadbranding">
+                            Crafted by <NavLink to="#"><img src={LeadbrandingLogo} /></NavLink>
+                        </div>
                     </div>
                     <div className="middle-block">
                         <div className="footer-logo">
@@ -32,62 +37,62 @@ export default function Footer() {
                                 Get in touch
                             </div>
                             <div className="get-in-touch-link">
-                                <a href="#">
+                                <NavLink to="#">
                                     Contacts
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="get-in-touch-social">
-                                <a href="#">
+                                <NavLink to="#">
                                     <div className="icon white behance"></div>
-                                </a>
-                                <a href="#">
+                                </NavLink>
+                                <NavLink to="#">
                                     <div className="icon white facebook"></div>
-                                </a>
-                                <a href="#">
+                                </NavLink>
+                                <NavLink to="#">
                                     <div className="icon white instagram"></div>
-                                </a>
-                                <a href="#">
+                                </NavLink>
+                                <NavLink to="#">
                                     <div className="icon white youtube"></div>
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
                     <div className="right-block">
                         <ul className="footer-nav reverse">
                             <li className="footer-nav-item">
-                                <a href="#" className="footer-nav-link">
+                                <NavLink to="/" className="footer-nav-link" exact>
                                     Home
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="footer-nav-item">
-                                <a href="#" className="footer-nav-link">
+                                <NavLink to="/services" className="footer-nav-link" exact>
                                     Services
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="footer-nav-item">
-                                <a href="#" className="footer-nav-link">
+                                <NavLink to="/projects" className="footer-nav-link" exact>
                                     Projects
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="footer-nav-item">
-                                <a href="#" className="footer-nav-link">
+                                <NavLink to="/clients" className="footer-nav-link" exact>
                                     Clients
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="footer-nav-item">
-                                <a href="#" className="footer-nav-link">
+                                <NavLink to="/about-us" className="footer-nav-link" exact>
                                     About us
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="footer-nav-item">
-                                <a href="#" className="footer-nav-link">
+                                <NavLink to="/privacy-policy" className="footer-nav-link" exact>
                                     Privacy Policy
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="footer-nav-item">
-                                <a href="#" className="footer-nav-link">
+                                <NavLink to="/terms-of-use" className="footer-nav-link" exact>
                                     Terms of use
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

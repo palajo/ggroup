@@ -1,5 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function HeroBanner() {
     return (
@@ -10,23 +10,25 @@ export default function HeroBanner() {
                         <h1 className="hero-banner-title">
                             Lorem ipsum
                     </h1>
-                        <button className="button">
-                            View all services
-                    </button>
+                        <NavLink to="#">
+                            <button className="button">
+                                View all services
+                            </button>
+                        </NavLink>
                     </div>
                     <div className="hero-banner-social">
-                        <a href="#">
+                        <NavLink to="#">
                             <div className="icon white behance"></div>
-                        </a>
-                        <a href="#">
+                        </NavLink>
+                        <NavLink to="#">
                             <div className="icon white facebook"></div>
-                        </a>
-                        <a href="#">
+                        </NavLink>
+                        <NavLink to="#">
                             <div className="icon white instagram"></div>
-                        </a>
-                        <a href="#">
+                        </NavLink>
+                        <NavLink to="#">
                             <div className="icon white youtube"></div>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>
