@@ -1,0 +1,100 @@
+section.project-section {
+    .container {
+        .row {
+            .container-body {
+                text-align: center;
+        
+                h2 {
+                    margin-bottom: 30px;
+                }
+        
+                p {
+                    text-align: center;
+
+                    &.width-960px {
+                        max-width: 960px;
+                        margin: 0 auto;
+                    }
+
+                    &.top-50px {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .project-about-image-container {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 50px;
+
+        .project-about-image-row {
+            display: flex;
+            flex-wrap: nowrap;
+            
+            margin-left: -7.5px;
+            margin-right: -7.5px;
+
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .project-about-image-block {
+                width: 100%;
+                height: auto;
+
+                padding: 0 7.5px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+
+                    object-fit: cover;
+                    object-position: center;
+
+                    filter: grayscale(1);
+                    transition: 0.2s ease;
+                }
+
+                &:hover {
+                    img {
+                        filter: grayscale(0);
+                    }
+                }
+            }
+
+            &.height-350px {
+                .project-about-image-block {
+                    height: 350px;
+                } 
+            }
+
+            &.height-400px {
+                .project-about-image-block {
+                    height: 400px;
+                }
+            }
+
+            &.height-500px {
+                .project-about-image-block {
+                    height: 500px;
+                }
+            }
+
+            &.height-700px {
+                .project-about-image-block {
+                    height: 700px;
+                }
+            }
+            
+            &.height-800px {
+                .project-about-image-block {
+                    height: 800px;
+                }
+            }
+        }
+    }
+}
