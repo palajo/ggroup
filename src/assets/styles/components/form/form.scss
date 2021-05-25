@@ -140,29 +140,31 @@ form {
                         flex-shrink: 0;
                         flex-grow: 0;
 
+                        background-image: url("data:image/svg+xml,%3Csvg width='19' height='15' viewBox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 0L5.70703 11.293L1.41406 7L0 8.41406L5.70703 14.1211L18.4141 1.41406L17 0Z' fill='white'/%3E%3C/svg%3E%0A");
                         background-color: #C4C4C4;
                         border-radius: 50%;
-
+    
                         background-size: 18px;
                         background-position: center;
                         background-repeat: no-repeat;
 
                         margin-right: 30px;
+
+                        transition: 0.2s ease;
                     }
                 }
 
                 input[type="checkbox"]:not(:disabled):not(:checked) + label:hover::before {
-                    background: #C0C0C0;
+                    background-color: #C0C0C0;
                 }
 
                 input[type="checkbox"]:not(:disabled):active + label::before {
-                    background: $primary;
+                    background-color: $primary;
                 }
 
                 input[type="checkbox"]:checked + label::before {
                     background-color: $primary;
-                    background-image: url("data:image/svg+xml,%3Csvg width='19' height='15' viewBox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 0L5.70703 11.293L1.41406 7L0 8.41406L5.70703 14.1211L18.4141 1.41406L17 0Z' fill='white'/%3E%3C/svg%3E%0A");
-                  }
+                }
             }
         }
     }

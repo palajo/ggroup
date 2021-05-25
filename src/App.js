@@ -10,6 +10,7 @@ import Header from "./components/Header"
 import MainPage from "./routes/MainPage"
 import ProjectPage from "./routes/ProjectPage"
 import ErrorPage from './routes/ErrorPage'
+import ContactsPage from './routes/ContactsPage'
 
 function App() {
     return(
@@ -19,6 +20,8 @@ function App() {
                 <Switch>
                     <Route component={MainPage} path="/" exact />
                     <Route component={ProjectPage} path="/project" exact />
+                    <Route component={ContactsPage} path="/contacts" exact />
+
                     <Route component={ErrorPage} />
                 </Switch>
                 <Footer />

@@ -1,5 +1,5 @@
 ul.footer-nav {
-    width: 100%;
+    width: fit-content;
     list-style: none;
     margin-bottom: 0;
 
@@ -12,7 +12,6 @@ ul.footer-nav {
 
         a.footer-nav-link {
             display: flex;
-            width: 100%;
             align-items: center;
 
             padding: 10px 0;

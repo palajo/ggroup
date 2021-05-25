@@ -44,11 +44,11 @@ export default function ProjectTeam() {
                 arrows: true,
                 swipeToSlide: true,
 
-                prevArrow:'<div class="team-slider-arrow prev"><div class="icon arrow-left"></div></div>',
-                nextArrow:'<div class="team-slider-arrow next"><div class="icon arrow-right"></div></div>',
+                prevArrow:'<div class="slider-arrow prev"><div class="icon arrow-left"></div></div>',
+                nextArrow:'<div class="slider-arrow next"><div class="icon arrow-right"></div></div>',
             });
         });
-    });
+    }, []);
 
     return (
         <section className="section section-team project-team">
