@@ -1,7 +1,10 @@
 import React from 'react'
 
-import ProjectAbout1 from '../../assets/images/projects/big/project-1.jpg'
 import AboutImage1 from '../../assets/images/projects/about/about-1.png'
+import AboutImage2 from '../../assets/images/projects/about/about-2.jpg'
+import AboutImage3 from '../../assets/images/projects/about/about-3.jpg'
+import AboutImage4 from '../../assets/images/projects/about/about-4.jpg'
+import AboutImage5 from '../../assets/images/projects/about/about-5.jpg'
 
 export default function ProjectAbout() {
     return (
@@ -40,18 +43,18 @@ export default function ProjectAbout() {
             <div className="project-about-image-container">
                 <div className="project-about-image-row height-500px">
                     <div className="project-about-image-block">
-                        <img src={ProjectAbout1} alt="Villa Kuzmina" />
+                        <img src={AboutImage2} alt="Villa Kuzmina" />
                     </div>
                     <div className="project-about-image-block">
-                        <img src={ProjectAbout1} alt="Villa Kuzmina" />
+                        <img src={AboutImage3} alt="Villa Kuzmina" />
                     </div>
                 </div>
                 <div className="project-about-image-row height-500px">
                     <div className="project-about-image-block">
-                        <img src={ProjectAbout1} alt="Villa Kuzmina" />
+                        <img src={AboutImage4} alt="Villa Kuzmina" />
                     </div>
                     <div className="project-about-image-block">
-                        <img src={ProjectAbout1} alt="Villa Kuzmina" />
+                        <img src={AboutImage5} alt="Villa Kuzmina" />
                     </div>
                 </div>
             </div>
