@@ -1,6 +1,6 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import $ from 'jquery'
+import { NavLink } from 'react-router-dom';
 
 import ProjectImage1 from '../../assets/images/projects/project-1.jpg'
 import ProjectImage2 from '../../assets/images/projects/project-2.jpg'
@@ -31,32 +31,52 @@ export function ProjectBlock(props) {
         </div>
     )
 }
+export default function ProjectsOther() {
 
-export default function Projects() {
+    useEffect(() => {
+        $(document).ready(function() {
+            $('.projects-other-slider').not('.slick-initialized').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+
+                infinite: true,
+                arrows: true,
+                swipeToSlide: true,
+
+                prevArrow:'<div class="slider-arrow prev"><div class="icon arrow-left"></div></div>',
+                nextArrow:'<div class="slider-arrow next"><div class="icon arrow-right"></div></div>',
+            });
+        });
+    }, [])
+
     return (
-        <section className="section section-projects">
+        <section className="section projects-other">
             <div className="container">
                 <div className="row">
                     <div className="container-body">
-                        <h2 className="container-title">
-                            Projects
+                        <h2>
+                            Also you can view
                         </h2>
-                        <div className="projects-row">
+                        <div className="projects-other-slider">
                             <ProjectBlock
                                 image={ProjectImage1}
                                 title="Villa Kuzmina"
                             />
                             <ProjectBlock
                                 image={ProjectImage2}
-                                title="Residential complex “National”"
+                                title="Villa Kuzmina"
                             />
                             <ProjectBlock
                                 image={ProjectImage3}
-                                title="Ice Arena"
+                                title="Villa Kuzmina"
                             />
                             <ProjectBlock
                                 image={ProjectImage4}
-                                title="Green Garden"
+                                title="Villa Kuzmina"
+                            />
+                            <ProjectBlock
+                                image={ProjectImage1}
+                                title="Villa Kuzmina"
                             />
                         </div>
                     </div>

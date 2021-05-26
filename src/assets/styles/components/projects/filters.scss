@@ -1,0 +1,147 @@
+section.projects-filters {
+    ul.filters-nav {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 100%;
+        list-style: none;
+        margin-bottom: 0;
+
+        li.filters-nav-item {
+            position: relative;
+            width: 25%;
+
+            &:nth-child(4n + 1) {
+                a.filters-nav-link {
+                    border-left: 1px solid $primary;
+                }
+
+                ul.filters-nav-submenu {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+
+            &:nth-child(-n + 4) {
+                border-top: 1px solid $primary;
+            }
+
+            a.filters-nav-link {
+                display: inline-block;
+                width: 100%;
+                padding: 20px 20px;
+
+                font-size: 12px;
+                line-height: 18px;
+
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $disabled;
+                letter-spacing: 2px;
+
+                border: 1px solid $primary;
+                border-left: 1px solid transparent;
+                border-top: 1px solid transparent;
+
+                span {
+                    display: block;
+
+                    font-size: 12px;
+                    line-height: 18px;
+
+                    color: $primary;
+                    font-weight: 600;
+                    text-transform: none;
+                }
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            ul.filters-nav-submenu {
+                display: none;
+
+                position: absolute;
+                width: calc(100% + 1px);
+
+                margin-top: -1px;
+                margin-left: -1px;
+
+                background: #fff;
+
+                list-style: none;
+                margin-bottom: 0;
+
+                z-index: 1;
+
+                li.filters-nav-submenu-item {
+
+                    &:first-child {
+                        a.filters-nav-submenu-link {
+                            border-top: 1px solid $primary;
+                        }
+                    }
+                    
+                    a.filters-nav-submenu-link {
+                        display: inline-block;
+                        width: 100%;
+                        padding: 20px 20px;
+
+                        font-size: 12px;
+                        line-height: 36px;
+
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        color: $disabled;
+                        letter-spacing: 2px;
+
+                        border: 1px solid $primary;
+                        border-top: 0;
+
+                        span {
+                            display: block;
+
+                            font-size: 12px;
+                            line-height: 18px;
+
+                            color: $primary;
+                            font-weight: 600;
+                            text-transform: none;
+                        }
+
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        
+            &.has-child {
+                &::before {
+                    content: '';
+                    position: absolute;
+
+                    top: 0;
+                    right: 15px;
+
+                    width: 12px;
+                    height: 100%;
+
+                    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='black'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+
+                    transition: 0.3s ease;
+                }
+
+                &:hover {
+                    &::before {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}

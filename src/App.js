@@ -11,6 +11,8 @@ import MainPage from "./routes/MainPage"
 import ProjectPage from "./routes/ProjectPage"
 import ErrorPage from './routes/ErrorPage'
 import ContactsPage from './routes/ContactsPage'
+import AboutPage from './routes/AboutPage'
+import ProjectsPage from './routes/ProjectsPage'
 
 function App() {
     return(
@@ -19,8 +21,10 @@ function App() {
                 <Header />
                 <Switch>
                     <Route component={MainPage} path="/" exact />
-                    <Route component={ProjectPage} path="/project" exact />
+                    <Route component={ProjectsPage} path="/projects" exact />
+                    <Route component={ProjectPage} path="/projects/project" exact />
                     <Route component={ContactsPage} path="/contacts" exact />
+                    <Route component={AboutPage} path="/about-us" exact />
 
                     <Route component={ErrorPage} />
                 </Switch>

@@ -1,0 +1,25 @@
+section.section.projects-main {
+    padding-bottom: 120px;
+
+    .page-title {
+        margin-left: 120px;
+
+        max-width: 600px;
+
+        p.description {
+            margin-bottom: 40px;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            line-height: 18px;
+
+            font-weight: 500;
+            color: $disabled;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            margin-bottom: 5px;
+        }
+    }
+}

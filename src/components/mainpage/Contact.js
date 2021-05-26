@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react'
 import $ from 'jquery'
 import { NavLink } from 'react-router-dom';
@@ -27,14 +28,14 @@ export default function Contact() {
                     <div className="tabs">
                         <ul className="tabs-nav" id="contact-tabs" role="tablist">
                             <li className="tabs-nav-item">
-                                <NavLink to="#" className="tabs-nav-link active" id="project-tab">
+                                <a href="#" className="tabs-nav-link active" id="project-tab">
                                     I'm interested in project
-                                </NavLink>
+                                </a>
                             </li>
                             <li className="tabs-nav-item">
-                                <NavLink to="#" className="tabs-nav-link" id="career-tab">
+                                <a href="#" className="tabs-nav-link" id="career-tab">
                                     I'm interested in a career
-                                </NavLink>
+                                </a>
                             </li>
                         </ul>
                         <div className="tab-content" id="contact-tabs">
