@@ -1,0 +1,58 @@
+section.main-hero {
+    height: calc(100vh - 110px);
+    min-height: 800px;
+
+    background: url('../../../images/banners/mainpage-bg.png') no-repeat;
+    background-size: auto 100%;
+    background-position: left bottom;
+
+    .container {
+        position: relative;
+        height: 100%;
+
+        .row {
+            justify-content: flex-end;
+
+            .main-hero-content {
+                margin-top: 200px;
+
+                p {
+                    margin-top: 30px;
+                }
+                button {
+                    margin-top: 30px;
+                }
+            }
+
+            .main-hero-social {
+                position: absolute;
+                display: flex;
+
+                bottom: 200px;
+                left: 100px;
+
+                a {
+                    display: inline-block;
+                    padding: 0 10px;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+
+                        &:hover {
+                            background: rgba(255, 255, 255, 0.85);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

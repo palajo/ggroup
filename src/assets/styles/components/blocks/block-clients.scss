@@ -1,0 +1,40 @@
+.clients-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+
+    .client-block {
+        width: calc(8.33% - 15px);
+        margin: 0 7.5px;
+
+        margin-bottom: 40px;
+
+        &:nth-last-of-type(-n + 12) {
+            margin-bottom: 0;
+        }
+
+        a {
+            display: flex;
+
+            img {
+                height: 60px;
+                max-width: 100%;
+                
+                object-fit: contain;
+                object-position: center;
+
+                filter: grayscale(1);
+                
+                transition: 0.2s ease;
+            }
+            
+            &:hover {
+                img {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+}

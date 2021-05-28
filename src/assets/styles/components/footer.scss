@@ -1,0 +1,125 @@
+footer {
+    padding: 40px 0;
+    background: $primary;
+    color: #fff;
+
+    .left-block {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .leadbranding {
+            padding-top: 20px;
+            
+            a {
+                display: flex;
+                width: fit-content;
+                
+                align-items: center;
+                align-self: flex-end;
+
+
+                font-size: 16px;
+                color: #fff;
+                text-transform: lowercase;
+                letter-spacing: 2px;
+            
+                img {
+                    margin-left: 10px;
+                    transition: 0.2s ease;
+                }
+
+                &:hover {
+                    color: rgba(255, 255, 255, 0.85);
+
+                    img {
+                        filter: brightness(0.85);
+                    }
+                }
+            }
+        }
+    }
+
+    .middle-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .get-in-touch {
+            width: 100%;
+            text-align: center;
+
+            margin-top: 40px;
+
+            .get-in-touch-title {
+                font-size: 36px;
+                line-height: 24px;
+        
+                font-weight: 500;
+                color: #fff;
+                text-transform: uppercase;
+        
+                margin-bottom: 15px;
+            }
+        
+            .get-in-touch-link {
+                a {
+                    font-size: 20px;
+                    line-height: 24px;
+        
+                    font-weight: 500;
+                    color: #fff;
+        
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #fff;
+        
+                    margin-bottom: 15px;
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.85);
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+                    }
+
+                }
+            }
+        
+            .get-in-touch-social {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                margin-top: 50px;
+        
+                a {
+                    display: inline-block;
+                    padding: 0 10px;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+        
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                    }
+        
+                    &:hover {
+                        .icon {
+                            background: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .right-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}

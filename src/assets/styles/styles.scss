@@ -1,0 +1,27 @@
+@import './const.scss';
+@import './icons.scss';
+@import './bootstrap.scss';
+@import './global.scss';
+
+@import './components/header.scss';
+@import './components/footer.scss';
+
+// banners
+@import './components/banners/main-hero.scss';
+
+// blocks
+@import './components/blocks/block-services.scss';
+@import './components/blocks/block-projects.scss';
+@import './components/blocks/block-clients.scss';
+
+// sliders
+@import './components/sliders/slider-team.scss';
+
+
+// tabs
+@import './components/tabs/tabs.scss';
+@import './components/tabs/tabs-contact.scss';
+
+
+// form
+@import './components/form/form.scss';

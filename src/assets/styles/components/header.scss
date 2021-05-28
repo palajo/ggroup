@@ -1,0 +1,48 @@
+header {
+    position: relative;
+    padding: 15px 0;
+
+    z-index: 1;
+
+    .container {
+        .row {
+            justify-content: space-between;
+
+            .col-12 {
+                display: flex;
+                flex-wrap: wrap;
+
+                align-items: center;
+                justify-content: space-between;
+
+                .left-block {
+                    .logo {
+                        img {
+                            height: 80px;
+                            transition: 0.2s ease;
+                            
+                            &:hover {
+                                filter: invert(0.35);
+                            }
+                        }
+                    }
+                }
+
+                .right-block {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    padding-top: 15px;
+
+                    &>* {
+                        margin-right: 40px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
