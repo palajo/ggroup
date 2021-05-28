@@ -40,7 +40,7 @@ export default function Header() {
                                     </NavLink>
                                 </li>
                                 <li className="main-nav-item">
-                                    <NavLink to="/services/interior-design" className="main-nav-link" exact>
+                                    <NavLink to="/services/residential-interrior-design" className="main-nav-link" exact>
                                         Residental interior design
                                     </NavLink>
                                 </li>

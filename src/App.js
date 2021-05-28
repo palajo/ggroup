@@ -13,6 +13,7 @@ import ErrorPage from './routes/ErrorPage'
 import ContactsPage from './routes/ContactsPage'
 import AboutPage from './routes/AboutPage'
 import ProjectsPage from './routes/ProjectsPage'
+import ResidentialPage from './routes/ResidentialPage'
 
 function App() {
     return(
@@ -25,6 +26,9 @@ function App() {
                     <Route component={ProjectPage} path="/projects/project" exact />
                     <Route component={ContactsPage} path="/contacts" exact />
                     <Route component={AboutPage} path="/about-us" exact />
+
+                    <Route component={ResidentialPage} path="/services/residential-interrior-design" exact />
+
 
                     <Route component={ErrorPage} />
                 </Switch>

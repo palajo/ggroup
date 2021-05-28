@@ -8,7 +8,6 @@ export default function ProjectHero() {
                 Villa Kuzmina    
             </h1>      
             <div className="project-hero-image">
-                <img src={VillaKuzmina} alt="Villa Kuzmina" />
             </div>   
             <div className="container">
                 <div className="row">
