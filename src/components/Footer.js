@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import LeadLogo from '../assets/images/leadbranding-white.svg'
 import LogoWhite from '../assets/images/logo-white.svg'
@@ -58,39 +59,39 @@ export default function Footer() {
                     <div className="col-4 right-block">
                         <ul className="nav flex-column reverse">
                             <li className="nav-item">
-                                <a href="/" className="nav-link">
+                                <NavLink to="/" className="nav-link" exact>
                                     Home
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="/services" className="nav-link">
+                                <NavLink to="/services" className="nav-link" exact>
                                     Services
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="/projects" className="nav-link">
+                                <NavLink to="/projects" className="nav-link" exact>
                                     Projects
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="/clients" className="nav-link">
+                                <NavLink to="/clients" className="nav-link" exact>
                                     Clients
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="/about-us" className="nav-link">
+                                <NavLink to="/NavLinkbout-us" className="nav-link" exact>
                                     About us
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="/privacy-policy" className="nav-link">
+                                <NavLink to="/privacy-policy" className="nav-link" exact>
                                     Privacy Policy
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="/terms-of-use" className="nav-link">
+                                <NavLink to="/terms-of-use" className="nav-link" exact>
                                     Terms of use
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
 import ClientLogo1 from '../../assets/images/clients/client-1.png'
@@ -31,108 +32,108 @@ export default function SectionClients() {
                         <h2 className="section-title">
                             Our clients
                         </h2>
-                        <div className="clients-row">
-                            <div className="client-block">
+                        <div className="blocks-row">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo1} alt="Globarch Client 1" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo2} alt="Globarch Client 2" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo3} alt="Globarch Client 3" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo4} alt="Globarch Client 4" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo5} alt="Globarch Client 5" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo6} alt="Globarch Client 6" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo7} alt="Globarch Client 7" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo8} alt="Globarch Client 8" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo9} alt="Globarch Client 9" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo10} alt="Globarch Client 10" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo11} alt="Globarch Client 11" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo12} alt="Globarch Client 12" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo13} alt="Globarch Client 13" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo14} alt="Globarch Client 14" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo15} alt="Globarch Client 15" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo16} alt="Globarch Client 16" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo17} alt="Globarch Client 17" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo18} alt="Globarch Client 18" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo19} alt="Globarch Client 19" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo20} alt="Globarch Client 20" />
                                 </a>
                             </div>
-                            <div className="client-block">
+                            <div className="col-1 client-block">
                                 <a href="#">
                                     <img src={ClientLogo21} alt="Globarch Client 21" />
                                 </a>

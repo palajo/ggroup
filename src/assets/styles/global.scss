@@ -148,22 +148,28 @@ button.button {
 
 
 /* section */
-section.section {
-    padding: 50px 0;
+main {
+    min-height: calc(100vh - 110px);
 
-    .section-title {
-        margin-bottom: 60px;
-    }
+    section {    
+        .section-title {
+            margin-bottom: 60px;
+        }
+    
+        .section-button {
+            display: flex;
+            justify-content: center;
+    
+            width: 100%;
+            margin-top: 60px;
+            
+            a {
+                display: inline-block;
+            }
+        }
 
-    .section-button {
-        display: flex;
-        justify-content: center;
-
-        width: 100%;
-        margin-top: 60px;
-        
-        a {
-            display: inline-block;
+        &.section {
+            padding: 50px 0;
         }
     }
 }

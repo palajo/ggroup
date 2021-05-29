@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import $ from 'jquery'
 
 import GlobarchGroupLogo from '../assets/images/logo.svg'
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
 
@@ -25,42 +26,42 @@ export default function Header() {
                     <div className="col-12">
                         <div className="left-block">
                             <div className="logo">
-                                <a href="#">
+                                <NavLink to="/">
                                     <img src={GlobarchGroupLogo} alt="Globarch Group Logo" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="right-block">
                             <ul className="nav main-nav">
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <NavLink to="/services/architecture-planning" className="nav-link" exact>
                                         Architecture planning
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <NavLink to="/services/residential-interrior-design" className="nav-link" exact>
                                         Residental interior design
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <NavLink to="/services/furniture-deisgn" className="nav-link" exact>
                                         Furniture design
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <NavLink to="/services/commercial-design" className="nav-link" exact>
                                         Commercial design
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <NavLink to="/about" className="nav-link" exact>
                                         About us
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <NavLink to="/contacts" className="nav-link" exact>
                                         Contacts
-                                    </a>
+                                    </NavLink>
                                 </li>
                             </ul>
                             <div className="dropdown">

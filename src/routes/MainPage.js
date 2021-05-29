@@ -76,8 +76,8 @@ export default function MainPage() {
                             <h2 className="section-title">
                                 Services
                             </h2>
-                            <div className="services-row">
-                                <div className="service-block">
+                            <div className="blocks-row">
+                                <div className="col-3 service-block">
                                     <div className="service-block-title">
                                         <img src={ServiceBlockIcon1} alt=" Architecture planning icon" />
                                         Architecture planning
@@ -93,7 +93,7 @@ export default function MainPage() {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="service-block">
+                                <div className="col-3 service-block">
                                     <div className="service-block-title">
                                         <img src={ServiceBlockIcon2} alt=" Architecture planning icon" />
                                         Residental interior design
@@ -109,7 +109,7 @@ export default function MainPage() {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="service-block">
+                                <div className="col-3 service-block">
                                     <div className="service-block-title">
                                         <img src={ServiceBlockIcon3} alt=" Architecture planning icon" />
                                         Commercial design
@@ -125,7 +125,7 @@ export default function MainPage() {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="service-block">
+                                <div className="col-3 service-block">
                                     <div className="service-block-title">
                                         <img src={ServiceBlockIcon4} alt=" Architecture planning icon" />
                                         Furniture design
@@ -153,8 +153,8 @@ export default function MainPage() {
                             <h2 className="section-title">
                                 Projects
                             </h2>
-                            <div className="projects-row">
-                                <div className="project-block">
+                            <div className="blocks-row">
+                                <div className="col-6 project-block">
                                     <div className="project-image">
                                         <img src={ProjectImage1} alt="Globarch Project 1" />
                                     </div>
@@ -173,7 +173,7 @@ export default function MainPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="project-block">
+                                <div className="col-6 project-block">
                                     <div className="project-image">
                                         <img src={ProjectImage2} alt="Globarch Project 2" />
                                     </div>
@@ -192,7 +192,7 @@ export default function MainPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="project-block">
+                                <div className="col-6 project-block">
                                     <div className="project-image">
                                         <img src={ProjectImage3} alt="Globarch Project 3" />
                                     </div>
@@ -211,7 +211,7 @@ export default function MainPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="project-block">
+                                <div className="col-6 project-block">
                                     <div className="project-image">
                                         <img src={ProjectImage4} alt="Globarch Project 4" />
                                     </div>

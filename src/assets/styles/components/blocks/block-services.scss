@@ -1,84 +1,73 @@
-.services-row {
-    display: flex;
-    flex-wrap: wrap;
+.service-block {
+    margin: 0 7.5px;
+    padding: 25px;
+    border: 1px solid $primary;
 
-    margin-left: -7.5px;
-    margin-right: -7.5px;
+    .service-block-title {
+        display: flex;
+        align-items: center;
 
-    .service-block {
-        width: calc(25% - 15px);
-        margin: 0 7.5px;
-        
-        padding: 25px;
-        border: 1px solid $primary;
+        width: 100%;
+        margin-bottom: 15px;
 
-        .service-block-title {
-            display: flex;
-            align-items: center;
+        font-size: 20px;
+        line-height: 24px;
+
+        font-weight: 500;
+        text-transform: uppercase;
+
+        img {
+            height: 60px;
+            margin-right: 20px;
+        }
+    }
+    
+    .service-block-description {
+        margin-top: 15px;
+    }
+
+    .service-block-more {
+        margin-top: 25px;
+
+        a {
+            position: relative;
+            display: inline-block;
 
             width: 100%;
-            margin-bottom: 15px;
+            text-transform: lowercase;
 
-            font-size: 20px;
-            line-height: 24px;
+            transition: 0.2s ease;
 
-            font-weight: 500;
-            text-transform: uppercase;
+            div {
+                width: fit-content;
+                background: #fff;
 
-            img {
-                height: 60px;
-                margin-right: 20px;
+                padding-right: 20px;
             }
-        }
-        
-        .service-block-description {
-            margin-top: 15px;
-        }
 
-        .service-block-more {
-            margin-top: 25px;
+            &::after {
+                content: '';
+                position: absolute;
+                
+                top: 50%;
+                left: 0;
 
-            a {
-                position: relative;
-                display: inline-block;
+                width: 50%;
+                height: 1px;
+                
+                background: $primary;
+                z-index: -1;
 
-                width: 100%;
-                text-transform: lowercase;
+                transition: width 0.3s ease;
+            }
 
-                transition: 0.2s ease;
-
-                div {
-                    width: fit-content;
-                    background: #fff;
-
-                    padding-right: 20px;
-                }
+            &:hover {
+                color: $secondary;
 
                 &::after {
-                    content: '';
-                    position: absolute;
-                    
-                    top: 50%;
-                    left: 0;
-
-                    width: 50%;
-                    height: 1px;
-                    
-                    background: $primary;
-                    z-index: -1;
-
-                    transition: width 0.3s ease;
-                }
-
-                &:hover {
-                    color: $secondary;
-
-                    &::after {
-                        width: 100%;
-                    }
+                    width: 100%;
                 }
             }
         }
-
     }
 }
