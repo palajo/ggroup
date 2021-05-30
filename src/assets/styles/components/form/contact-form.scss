@@ -1,0 +1,50 @@
+.contact-form {
+    position: relative;
+
+    padding: 60px 40px 0 40px;
+    text-align: center;
+
+    p {
+        margin-top: 30px;
+    }
+
+    form {
+        margin-top: 50px;
+
+        .form-row {
+            .form-block {
+                text-align: left;
+            }
+        }
+    }
+
+    .contacts-phone {
+        text-align: center;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 1px;
+        height: 75%;
+
+        background: $lightgray;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+
+        top: 0;
+        right: 0;
+
+        width: 1px;
+        height: 75%;
+
+        background: $lightgray;
+    }
+}

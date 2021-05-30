@@ -1,0 +1,28 @@
+.projects-hero {
+    padding: 80px 0 120px 120px;
+
+    .projects-hero-content {
+        max-width: 600px;
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .projects-hero-title {
+            span {
+                display: block;
+
+                font-size: 12px;
+                line-height: 18px;
+    
+                font-weight: 500;
+                color: $disabled;
+
+                text-transform: uppercase;
+                letter-spacing: 2px;
+    
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

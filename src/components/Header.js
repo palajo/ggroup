@@ -17,7 +17,7 @@ export default function Header() {
                 $(this).find('.dropdown-menu').fadeOut(100);
             });
         });
-    })
+    }, []);
 
     return (
         <header>
@@ -64,8 +64,8 @@ export default function Header() {
                                     </NavLink>
                                 </li>
                             </ul>
-                            <div className="dropdown">
-                                <a className="dropdown-item-active dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div className="dropdown language-switcher-dropdown">
+                                <a className="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     en
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">

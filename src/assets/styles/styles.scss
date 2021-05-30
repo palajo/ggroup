@@ -8,6 +8,7 @@
 
 // banners
 @import './components/banners/main-hero.scss';
+@import './components/banners/projects-hero.scss';
 
 // blocks
 @import './components/blocks/blocks.scss';
@@ -16,13 +17,21 @@
 @import './components/blocks/block-clients.scss';
 
 // sliders
+@import './components/sliders/slider.scss';
 @import './components/sliders/slider-team.scss';
+@import './components/sliders/slider-projects.scss';
 
 
 // tabs
 @import './components/tabs/tabs.scss';
-@import './components/tabs/tabs-contact.scss';
 
 
 // form
 @import './components/form/form.scss';
+@import './components/form/contact-form.scss';
+@import './components/form/double-contact-form.scss';
+
+
+// filters
+@import './components/filters/filters.scss';
+@import './components/filters/projects-block.scss';

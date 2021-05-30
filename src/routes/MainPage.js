@@ -18,6 +18,7 @@ import ProjectImage4 from '../assets/images/projects/thumbnails/project-4.jpg'
 import SectionClients from '../components/sections/SectionClients';
 import SectionTeam from '../components/sections/SectionTeam';
 import SectionDoubleContact from '../components/sections/SectionDoubleContact';
+import { NavLink } from 'react-router-dom';
 
 export default function MainPage() {
 
@@ -232,11 +233,11 @@ export default function MainPage() {
                                 </div>
                             </div>
                             <div className="section-button">
-                                <a href="#">
+                                <NavLink to="/projects">
                                     <button className="button">
                                         View all projects
                                     </button>
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>

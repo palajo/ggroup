@@ -8,6 +8,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import MainPage from './routes/MainPage';
+import ProjectsPage from './routes/ProjectsPage';
+import ProjectPage from './routes/ProjectPage';
+import ErrorPage from './routes/ErrorPage';
 
 function App() {
     return (
@@ -15,6 +18,9 @@ function App() {
             <Header />
             <Switch>
                 <Route component={MainPage} path="/" exact />
+                <Route component={ProjectsPage} path="/projects" exact />
+                <Route component={ProjectPage} path="/projects/villa-kuzmina" exact />
+                <Route component={ErrorPage} />
             </Switch>
             <Footer />
         </BrowserRouter>
