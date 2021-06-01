@@ -161,16 +161,16 @@ export default function MainPage() {
                                     </div>
                                     <div className="project-title">
                                         <div className="project-title-title">
-                                            <a href="#" className="nav-link">
+                                            <NavLink to="/projects/villa-kuzmina" className="nav-link">
                                                 Villa Kuzmina
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="project-title-more">
-                                            <a href="#">
+                                            <NavLink to="/projects/villa-kuzmina">
                                                 <div>
                                                     View more
                                                 </div>
-                                            </a>
+                                            </NavLink>
                                         </div>
                                     </div>
                                 </div>
@@ -180,16 +180,16 @@ export default function MainPage() {
                                     </div>
                                     <div className="project-title">
                                         <div className="project-title-title">
-                                            <a href="#" className="nav-link">
+                                            <NavLink to="/projects/villa-kuzmina" className="nav-link">
                                                 Villa Kuzmina
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="project-title-more">
-                                            <a href="#">
+                                            <NavLink to="/projects/villa-kuzmina">
                                                 <div>
                                                     View more
                                                 </div>
-                                            </a>
+                                            </NavLink>
                                         </div>
                                     </div>
                                 </div>
@@ -199,16 +199,16 @@ export default function MainPage() {
                                     </div>
                                     <div className="project-title">
                                         <div className="project-title-title">
-                                            <a href="#" className="nav-link">
+                                            <NavLink to="/projects/villa-kuzmina" className="nav-link">
                                                 Villa Kuzmina
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="project-title-more">
-                                            <a href="#">
+                                            <NavLink to="/projects/villa-kuzmina">
                                                 <div>
                                                     View more
                                                 </div>
-                                            </a>
+                                            </NavLink>
                                         </div>
                                     </div>
                                 </div>
@@ -218,16 +218,16 @@ export default function MainPage() {
                                     </div>
                                     <div className="project-title">
                                         <div className="project-title-title">
-                                            <a href="#" className="nav-link">
+                                            <NavLink to="/projects/villa-kuzmina" className="nav-link">
                                                 Villa Kuzmina
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="project-title-more">
-                                            <a href="#">
+                                            <NavLink to="/projects/villa-kuzmina">
                                                 <div>
                                                     View more
                                                 </div>
-                                            </a>
+                                            </NavLink>
                                         </div>
                                     </div>
                                 </div>

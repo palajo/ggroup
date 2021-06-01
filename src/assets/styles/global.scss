@@ -81,7 +81,7 @@ h5 {
 
 p {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 30px;
 
     margin-bottom: 15px;
 
@@ -153,6 +153,11 @@ main {
 
     section {    
         .section-title {
+            margin-bottom: 60px;
+        }
+        
+        .section-description {
+            margin-top: -30px;
             margin-bottom: 60px;
         }
     

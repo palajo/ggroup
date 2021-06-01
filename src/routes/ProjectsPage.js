@@ -7,6 +7,7 @@ import ProjectImage2 from '../assets/images/projects/thumbnails/project-2.jpg'
 import ProjectImage3 from '../assets/images/projects/thumbnails/project-3.jpg'
 import ProjectImage4 from '../assets/images/projects/thumbnails/project-4.jpg'
 import ProjectsSlider from '../components/sliders/ProjectsSlider'
+import { NavLink } from 'react-router-dom'
 
 export default function ProjectsPage() {
 
@@ -181,9 +182,9 @@ export default function ProjectsPage() {
                         </div>
                         <div className="projects-title">
                             <div className="projects-title-title">
-                                <a href="#" className="nav-link">
+                                <NavLink to="/projects/villa-kuzmina" className="nav-link">
                                     Villa Kuzmina
-                                </a>
+                                </NavLink>
                                 <span>
                                     Location
                                 </span>
@@ -196,9 +197,9 @@ export default function ProjectsPage() {
                         </div>
                         <div className="projects-title">
                             <div className="projects-title-title">
-                                <a href="#" className="nav-link">
+                                <NavLink to="/projects/villa-kuzmina" className="nav-link">
                                     Villa Kuzmina
-                                </a>
+                                </NavLink>
                                 <span>
                                     Location
                                 </span>
@@ -211,9 +212,9 @@ export default function ProjectsPage() {
                         </div>
                         <div className="projects-title">
                             <div className="projects-title-title">
-                                <a href="#" className="nav-link">
+                                <NavLink to="/projects/villa-kuzmina" className="nav-link">
                                     Villa Kuzmina
-                                </a>
+                                </NavLink>
                                 <span>
                                     Location
                                 </span>
@@ -226,9 +227,9 @@ export default function ProjectsPage() {
                         </div>
                         <div className="projects-title">
                             <div className="projects-title-title">
-                                <a href="#" className="nav-link">
+                                <NavLink to="/projects/villa-kuzmina" className="nav-link">
                                     Villa Kuzmina
-                                </a>
+                                </NavLink>
                                 <span>
                                     Location
                                 </span>

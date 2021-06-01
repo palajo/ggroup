@@ -5,6 +5,7 @@ import ProjectImage1 from '../../assets/images/projects/thumbnails/project-1.jpg
 import ProjectImage2 from '../../assets/images/projects/thumbnails/project-2.jpg'
 import ProjectImage3 from '../../assets/images/projects/thumbnails/project-3.jpg'
 import ProjectImage4 from '../../assets/images/projects/thumbnails/project-4.jpg'
+import { NavLink } from 'react-router-dom'
 
 export default function ProjectsSlider() {
 
@@ -32,16 +33,16 @@ export default function ProjectsSlider() {
                 </div>
                 <div className="project-title">
                     <div className="project-title-title">
-                        <a href="#" className="nav-link">
+                        <NavLink to="/projects/villa-kuzmina" className="nav-link">
                             Villa Kuzmina
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="project-title-more">
-                        <a href="#">
+                        <NavLink to="/projects/villa-kuzmina">
                             <div>
                                 View more
                             </div>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>
@@ -51,16 +52,16 @@ export default function ProjectsSlider() {
                 </div>
                 <div className="project-title">
                     <div className="project-title-title">
-                        <a href="#" className="nav-link">
+                        <NavLink to="/projects/villa-kuzmina" className="nav-link">
                             Villa Kuzmina
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="project-title-more">
-                        <a href="#">
+                        <NavLink to="/projects/villa-kuzmina">
                             <div>
                                 View more
                             </div>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>
@@ -70,16 +71,16 @@ export default function ProjectsSlider() {
                 </div>
                 <div className="project-title">
                     <div className="project-title-title">
-                        <a href="#" className="nav-link">
+                        <NavLink to="/projects/villa-kuzmina" className="nav-link">
                             Villa Kuzmina
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="project-title-more">
-                        <a href="#">
+                    <NavLink to="/projects/villa-kuzmina">
                             <div>
                                 View more
                             </div>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>
@@ -89,16 +90,16 @@ export default function ProjectsSlider() {
                 </div>
                 <div className="project-title">
                     <div className="project-title-title">
-                        <a href="#" className="nav-link">
+                        <NavLink to="/projects/villa-kuzmina" className="nav-link">
                             Villa Kuzmina
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="project-title-more">
-                        <a href="#">
+                        <NavLink to="/projects/villa-kuzmina">
                             <div>
                                 View more
                             </div>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>
@@ -108,16 +109,16 @@ export default function ProjectsSlider() {
                 </div>
                 <div className="project-title">
                     <div className="project-title-title">
-                        <a href="#" className="nav-link">
+                        <NavLink to="/projects/villa-kuzmina" className="nav-link">
                             Villa Kuzmina
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="project-title-more">
-                        <a href="#">
+                        <NavLink to="/projects/villa-kuzmina">
                             <div>
                                 View more
                             </div>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>
@@ -127,16 +128,16 @@ export default function ProjectsSlider() {
                 </div>
                 <div className="project-title">
                     <div className="project-title-title">
-                        <a href="#" className="nav-link">
+                        <NavLink to="/projects/villa-kuzmina" className="nav-link">
                             Villa Kuzmina
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="project-title-more">
-                        <a href="#">
+                        <NavLink to="/projects/villa-kuzmina">
                             <div>
                                 View more
                             </div>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>

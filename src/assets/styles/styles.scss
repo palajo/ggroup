@@ -7,8 +7,10 @@
 @import './components/footer.scss';
 
 // banners
-@import './components/banners/main-hero.scss';
-@import './components/banners/projects-hero.scss';
+@import './components/hero/main-hero.scss';
+@import './components/hero/projects-hero.scss';
+@import './components/hero/project-hero.scss';
+
 
 // blocks
 @import './components/blocks/blocks.scss';
@@ -35,3 +37,11 @@
 // filters
 @import './components/filters/filters.scss';
 @import './components/filters/projects-block.scss';
+
+
+// tables
+@import './components/tables/table-profile.scss';
+
+
+// custom block styles
+@import './components/custom/project/project.scss';
