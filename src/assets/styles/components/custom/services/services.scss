@@ -6,8 +6,9 @@ ul.benefits-list {
     margin-bottom: -20px;
 
     li {
-        display: flex;
-        
+        position: relative;
+
+        display: inline-block;        
         width: 50%;
 
         font-size: 18px;
@@ -16,21 +17,18 @@ ul.benefits-list {
         font-weight: 400;
         color: $primary;
 
-        padding: 0 15px;
+        padding: 0 15px 0 45px;
         margin-bottom: 20px;
-
-        &:nth-child(2n + 1) {
-            padding-left: 0;
-        }
-
-        &:nth-child(2n) {
-            padding-right: 0;
-        }
 
 
         &::before {
+            position: absolute;
+
             display: block;
             content: '';
+
+            top: 0;
+            left: 0;
 
             width: 30px;
             height: 30px;
@@ -43,6 +41,33 @@ ul.benefits-list {
             mask-size: contain;
             mask-position: center;
             mask-repeat: no-repeat;
+        }
+    }
+}
+
+section.four-blocks {
+    .section-title {
+        margin-left: 100px;
+    }
+
+    &.reverse {
+        .project-gallery {
+            .project-gallery-block {        
+                &.block-with-text {
+                    .project-gallery-block-image {
+                        order: 2;
+        
+                        &::before {
+                            left: auto;
+                            right: 60px;
+                        }
+                    }
+    
+                    .project-gallery-block-content {
+                        order: 1;
+                    }
+                }
+            }
         }
     }
 }

@@ -15,6 +15,8 @@ import ScrollToTop from './ScrollToTop';
 import AboutPage from './routes/AboutPage';
 import ContactsPage from './routes/ContactsPage';
 import InterriorDesignPage from './routes/InterriorDesignPage';
+import FurnitureDeisgnPage from './routes/FurnitureDeisgnPage';
+import CommercialDesignPage from './routes/CommercialDesignPage';
 
 function App() {
     return (
@@ -27,7 +29,12 @@ function App() {
                     <Route component={ProjectPage} path="/projects/villa-kuzmina" exact />
                     <Route component={AboutPage} path="/about" exact />
                     <Route component={ContactsPage} path="/contacts" exact />
+
                     <Route component={InterriorDesignPage} path="/services/residential-interrior-design" exact />
+                    <Route component={FurnitureDeisgnPage} path="/services/furniture-deisgn" exact />
+                    <Route component={CommercialDesignPage} path="/services/commercial-design" exact />
+
+
                     <Route component={ErrorPage} path="*" />
                 </Switch>
                 <Footer />

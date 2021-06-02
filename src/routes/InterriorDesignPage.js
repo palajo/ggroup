@@ -1,9 +1,18 @@
 import React from 'react'
 
-import VillaKuzmina from '../assets/images/projects/fullsize/villa-kuzmina.jpg'
 import SectionClients from '../components/sections/SectionClients'
 import SectionContact from '../components/sections/SectionContact'
 import ProjectsSlider from '../components/sliders/ProjectsSlider'
+
+import InterriorImage1 from '../assets/images/interrior-design/image-1.jpg'
+import InterriorImage2 from '../assets/images/interrior-design/image-2.jpg'
+import InterriorImage3 from '../assets/images/interrior-design/image-3.jpg'
+import InterriorImage4 from '../assets/images/interrior-design/image-4.jpg'
+import InterriorImage5 from '../assets/images/interrior-design/image-5.jpg'
+import InterriorImage6 from '../assets/images/interrior-design/image-6.jpg'
+import InterriorImage7 from '../assets/images/interrior-design/image-7.jpg'
+
+
 
 export default function InterriorDesignPage() {
     return (
@@ -19,7 +28,7 @@ export default function InterriorDesignPage() {
                         </p>
                     </div>
                     <div className="project-hero-background">
-                        <img src={VillaKuzmina} alt="Villa Kuzmina Main" />
+                        <img src={InterriorImage1} alt="Villa Kuzmina Main" />
                     </div>
                 </div>
             </section> 
@@ -66,20 +75,20 @@ export default function InterriorDesignPage() {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 image-height-800">
-                                <img src={VillaKuzmina} alt="Villa Kuzmina" />
+                                <img src={InterriorImage2} alt="Villa Kuzmina" />
                             </div>
                         </div>
                     </div>
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-4 project-gallery-block image-height-700">
-                                <img src={VillaKuzmina} alt="Villa Kuzmina" />
+                                <img src={InterriorImage3} alt="Villa Kuzmina" />
                             </div>
                             <div className="col-4 project-gallery-block image-height-700">
-                                <img src={VillaKuzmina} alt="Villa Kuzmina" />
+                                <img src={InterriorImage4} alt="Villa Kuzmina" />
                             </div>
                             <div className="col-4 project-gallery-block image-height-700">
-                                <img src={VillaKuzmina} alt="Villa Kuzmina" />
+                                <img src={InterriorImage5} alt="Villa Kuzmina" />
                             </div>
                         </div>
                     </div>
@@ -97,10 +106,10 @@ export default function InterriorDesignPage() {
                     <div className="container">
                         <div className="row">
                             <div className="col-6 project-gallery-block image-height-500">
-                                <img src={VillaKuzmina} alt="Villa Kuzmina" />
+                                <img src={InterriorImage6} alt="Villa Kuzmina" />
                             </div>
                             <div className="col-6 project-gallery-block image-height-500">
-                                <img src={VillaKuzmina} alt="Villa Kuzmina" />
+                                <img src={InterriorImage7} alt="Villa Kuzmina" />
                             </div>
                         </div>
                     </div>
