@@ -106,13 +106,12 @@ ul.project-navigation {
     }
 
     .project-gallery-block {
-        height: auto;
-
         &.block-with-text {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
 
-            flex-wrap: wrap;
+            height: auto;
 
             .project-gallery-block-image {
                 position: relative;
