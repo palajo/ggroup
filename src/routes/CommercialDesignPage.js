@@ -50,22 +50,22 @@ export default function CommercialDesignPage() {
                             </h2>
                             <ul className="nav project-navigation">
                                 <li className="nav-item">
-                                    <a href="#about" className="nav-link">
+                                    <a href="#restaurants-and-cafes" className="nav-link">
                                         Restaurants and cafes
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#location" className="nav-link">
+                                    <a href="#clinics" className="nav-link">
                                         Clinics
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#design" className="nav-link">
+                                    <a href="#offices" className="nav-link">
                                         Offices 
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#easter-egg" className="nav-link">
+                                    <a href="#other-commercial-facilities" className="nav-link">
                                         Other commercial facilities
                                     </a>
                                 </li>
@@ -100,7 +100,7 @@ export default function CommercialDesignPage() {
                     </div>
                 </div>
             </section>
-            <section className="section four-blocks">
+            <section className="section four-blocks" id="restaurants-and-cafes">
                 <div className="project-gallery">
                     <div className="container">
                         <div className="row">
@@ -140,7 +140,7 @@ export default function CommercialDesignPage() {
                     </div>
                 </div>
             </section>
-            <section className="section four-blocks reverse">
+            <section className="section four-blocks reverse" id="clinics">
                 <div className="project-gallery">
                     <div className="container">
                         <div className="row">
@@ -180,7 +180,7 @@ export default function CommercialDesignPage() {
                     </div>
                 </div>
             </section>
-            <section className="section four-blocks">
+            <section className="section four-blocks" id="offices">
                 <div className="project-gallery">
                     <div className="container">
                         <div className="row">
@@ -220,7 +220,7 @@ export default function CommercialDesignPage() {
                     </div>
                 </div>
             </section>
-            <section className="section four-blocks reverse">
+            <section className="section four-blocks reverse" id="other-commercial-facilities">
                 <div className="project-gallery">
                     <div className="container">
                         <div className="row">

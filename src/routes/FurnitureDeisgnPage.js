@@ -46,22 +46,22 @@ export default function FurnitureDeisgnPage() {
                         <div className="col-12">
                             <ul className="nav project-navigation">
                                 <li className="nav-item">
-                                    <a href="#about" className="nav-link">
+                                    <a href="#items-of-individual-production" className="nav-link">
                                         Items of individual production
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#location" className="nav-link">
+                                    <a href="#authors-furniture" className="nav-link">
                                         Author's furniture
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#design" className="nav-link">
+                                    <a href="#lamps" className="nav-link">
                                         Lamps 
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#easter-egg" className="nav-link">
+                                    <a href="#decor" className="nav-link">
                                         Decor
                                     </a>
                                 </li>
@@ -70,7 +70,7 @@ export default function FurnitureDeisgnPage() {
                     </div>
                 </div>
             </section>
-            <section className="section four-blocks">
+            <section className="section four-blocks" id="items-of-individual-production">
                 <div className="project-gallery">
                     <div className="container">
                         <div className="row">
@@ -110,12 +110,12 @@ export default function FurnitureDeisgnPage() {
                     </div>
                 </div>
             </section>
-            <section className="section four-blocks reverse">
+            <section className="section four-blocks reverse" id="authors-furniture">
                 <div className="project-gallery">
                     <div className="container">
                         <div className="row">
                             <h2 className="section-title">
-                                Items of individual production
+                                Author's furniture
                             </h2>
                         </div>
                         <div className="row">
@@ -150,12 +150,12 @@ export default function FurnitureDeisgnPage() {
                     </div>
                 </div>
             </section>
-            <section className="section four-blocks">
+            <section className="section four-blocks" id="lamps">
                 <div className="project-gallery">
                     <div className="container">
                         <div className="row">
                             <h2 className="section-title">
-                                Items of individual production
+                                Lamps
                             </h2>
                         </div>
                         <div className="row">
@@ -190,12 +190,12 @@ export default function FurnitureDeisgnPage() {
                     </div>
                 </div>
             </section>
-            <section className="section four-blocks reverse">
+            <section className="section four-blocks reverse" id="decor">
                 <div className="project-gallery">
                     <div className="container">
                         <div className="row">
                             <h2 className="section-title">
-                                Items of individual production
+                                Decor
                             </h2>
                         </div>
                         <div className="row">

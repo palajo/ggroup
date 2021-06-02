@@ -58,7 +58,7 @@ export default function InterriorDesignPage() {
                 </div>
             </section>
             <SectionContact />
-            <section className="section" id="about">
+            <section className="section">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 text-center">
