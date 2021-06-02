@@ -105,7 +105,7 @@ ul.nav.flex-column {
             line-height: 24px;
 
             text-transform: lowercase;
-            color: #fff;
+            color: $primary;
 
             letter-spacing: 2px;
             transition: 0.1s ease;
@@ -117,13 +117,17 @@ ul.nav.flex-column {
                 width: 0;
                 height: 1px;
 
-                background: #fff;
+                background: $primary;
 
                 transition: margin-right 0.3s ease, width 0.3s ease;
             }
 
+            &::after { 
+                display: none;
+            }
+
             &:hover {
-                color: rgba(255, 255, 255, 0.85);
+                color: $secondary;
 
                 &::before {
                     margin-right: 30px;
@@ -187,6 +191,22 @@ ul.nav.flex-column {
                             width: 70px;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    &.white {
+        li.nav-item {
+            a.nav-link {
+                color: #fff;
+
+                &:hover{ 
+                    color: rgba(255, 255, 255, 0.85);
+                }
+
+                &::after {
+                    background: #fff;
                 }
             }
         }

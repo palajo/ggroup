@@ -1,0 +1,57 @@
+section.about-information {
+    margin-bottom: 50px;
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        padding-right: 120px;
+
+        .slogan {
+            position: absolute;
+
+            top: 0;
+            right: 0;
+
+
+            font-size: 18px;
+            line-height: 18px;
+
+            font-weight: 500;
+            color: $disabled;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            transform: rotate(90deg) translateY(-70px) translateX(210px);
+        }
+
+        .view-projects {
+            display: flex;
+            justify-content: center;
+
+            margin-top: 60px;
+            padding-right: 100px;
+
+            a.nav-link {
+                display: flex; 
+                align-items: center;
+
+                font-size: 18px;
+                line-height: 24px;
+                text-transform: lowercase;
+
+                &::after {
+                    margin-left: 20px;
+                    width: 30px;
+                    transition: 0.2s ease;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

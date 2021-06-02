@@ -88,6 +88,15 @@ p {
     &:last-of-type {
         margin-bottom: 0;
     }
+
+    &.size-18px {
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
 }
 
 b {
@@ -175,6 +184,14 @@ main {
 
         &.section {
             padding: 50px 0;
+
+            &.double-padding {
+                padding: 100px 0;
+            }
+        }
+
+        &.gray {
+            background: #F2F2F2;
         }
     }
 }

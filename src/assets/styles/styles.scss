@@ -10,6 +10,7 @@
 @import './components/hero/main-hero.scss';
 @import './components/hero/projects-hero.scss';
 @import './components/hero/project-hero.scss';
+@import './components/hero/about-hero.scss';
 
 
 // blocks
@@ -45,3 +46,5 @@
 
 // custom block styles
 @import './components/custom/project/project.scss';
+@import './components/custom/about/about.scss';
+@import './components/custom/contacts/contacts.scss';

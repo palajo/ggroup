@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-4 left-block">
-                        <ul className="nav flex-column">
+                        <ul className="nav flex-column white">
                             <li className="nav-item">
                                 <a href="#" className="nav-link">
                                     Ukraine, Lviv, Basarab 3 st.
@@ -57,7 +57,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="col-4 right-block">
-                        <ul className="nav flex-column reverse">
+                        <ul className="nav flex-column reverse white">
                             <li className="nav-item">
                                 <NavLink to="/" className="nav-link" exact>
                                     Home

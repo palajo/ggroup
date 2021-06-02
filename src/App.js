@@ -12,6 +12,8 @@ import ProjectsPage from './routes/ProjectsPage';
 import ProjectPage from './routes/ProjectPage';
 import ErrorPage from './routes/ErrorPage';
 import ScrollToTop from './ScrollToTop';
+import AboutPage from './routes/AboutPage';
+import ContactsPage from './routes/ContactsPage';
 
 function App() {
     return (
@@ -22,6 +24,9 @@ function App() {
                     <Route component={MainPage} path="/" exact />
                     <Route component={ProjectsPage} path="/projects" exact />
                     <Route component={ProjectPage} path="/projects/villa-kuzmina" exact />
+                    <Route component={AboutPage} path="/about" exact />
+                    <Route component={ContactsPage} path="/contacts" exact />
+
                     <Route component={ErrorPage} />
                 </Switch>
                 <Footer />
