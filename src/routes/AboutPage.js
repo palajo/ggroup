@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import TeamImage from '../assets/images/projects/fullsize/villa-kuzmina.jpg'
 import SectionClients from '../components/sections/SectionClients'
 import SectionDoubleContact from '../components/sections/SectionDoubleContact'
+
+import TeamImage from '../assets/images/team/together.jpg'
 
 export default function AboutPage() {
     return (
