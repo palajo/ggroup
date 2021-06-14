@@ -194,7 +194,7 @@ export default function ArchitecturePlanningPage() {
                                 Our architecture projects
                             </h2>
                             <div className="blocks-row">
-                            <div className="col-6 project-block">
+                                <div className="col-6 project-block">
                                     <div className="project-image">
                                         <img src={ProjectImage1} alt="Globarch Project 1" />
                                     </div>
@@ -232,6 +232,13 @@ export default function ArchitecturePlanningPage() {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="section-button">
+                                <NavLink to="/projects">
+                                    <button className="button">
+                                        View all projects
+                                    </button>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
