@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react'
+import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 
 import 'slick-carousel/slick/slick.min.js'
@@ -18,7 +19,6 @@ import ProjectImage4 from '../assets/images/projects/thumbnails/project-4.jpg'
 import SectionClients from '../components/sections/SectionClients';
 import SectionTeam from '../components/sections/SectionTeam';
 import SectionDoubleContact from '../components/sections/SectionDoubleContact';
-import { NavLink } from 'react-router-dom';
 
 export default function MainPage() {
 
