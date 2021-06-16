@@ -123,3 +123,17 @@ footer {
         justify-content: flex-end;
     }
 }
+
+@media screen and (max-width: 767px) {
+    footer {
+        .left-block {
+            display: none;
+        }
+        .middle-block {
+            width: 100%;
+        }
+        .right-block {
+            display: none;
+        }
+    }
+}

@@ -16,6 +16,12 @@ export default function Header() {
             $('.dropdown').on('mouseleave',function(){
                 $(this).find('.dropdown-menu').fadeOut(100);
             });
+
+            $('.navigation-toggler > .icon-burgermenu').click(function() {
+                $(this).toggleClass('active');
+                $('body').toggleClass('overflow-hidden');
+                $('.right-block').toggle('slide');
+            })
         });
     }, []);
 
@@ -29,6 +35,13 @@ export default function Header() {
                                 <NavLink to="/">
                                     <img src={GlobarchGroupLogo} alt="Globarch Group Logo" />
                                 </NavLink>
+                            </div>
+                        </div>
+                        <div className="navigation-toggler">
+                            <div className="icon-burgermenu">
+                                <div className="line"></div>
+                                <div className="line"></div>
+                                <div className="line"></div>
                             </div>
                         </div>
                         <div className="right-block">
@@ -85,6 +98,12 @@ export default function Header() {
                                         </a>
                                     </li>
                                 </ul>
+                            </div>
+                            <div className="contacts-phone">
+                                <a href="#">
+                                    <span>or call</span>
+                                    +38 099 98 47 911
+                                </a>
                             </div>
                         </div>
                     </div>

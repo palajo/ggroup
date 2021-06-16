@@ -1,4 +1,5 @@
 section.section-contacts {
+    overflow: hidden;
 
     .section-title {
         margin-bottom: 110px;
@@ -42,7 +43,7 @@ section.section-contacts {
     }
 
     .contacts-map {
-        position: relative;
+        position: relative;        
         padding-right: 150px;
 
         &::before {

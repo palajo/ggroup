@@ -43,7 +43,7 @@ export default function MainPage() {
             <section className="main-hero">
                 <div className="container">
                     <div className="row">
-                        <div className="col-5">
+                        <div className="col-md-5">
                             <div className="main-hero-content">
                                 <h1 className="main-hero-title">
                                     LOREM IPSUM
