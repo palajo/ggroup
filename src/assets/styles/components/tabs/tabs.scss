@@ -56,3 +56,41 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .tabs-container {
+        ul.nav-tabs {
+            display: flex;
+            width: 100%;
+    
+            li.nav-item {
+                .nav-link {
+                    padding: 10px 15px;
+    
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .tab-content {
+            .tab-pane {
+                .tab-pane-row {
+                    display: flex;
+                    align-items: center;
+    
+                    width: 100%;
+    
+                    .tab-pane-col {
+                        width: 100%;
+                        padding: 40px 30px;
+
+                        &.contacts-tab-block {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -252,3 +252,11 @@ main {
     }
 }
 /* ----------------------------------------- */
+
+
+/* custom styles */
+@media screen and (max-width: 767px) {
+    .no-padding-mobile {
+        padding: 0 !important;
+    }
+}

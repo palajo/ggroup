@@ -26,3 +26,26 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .filters-row {
+        .filter-block {
+            width: 100%;
+
+            &.dropdown {
+                .dropdown-toggle {
+                    border-right: 1px solid $primary;
+                    border-bottom: 0;
+                }
+            }
+            
+            &:last-child {
+                &.dropdown {
+                    .dropdown-toggle {
+                        border-bottom: 1px solid $primary;
+                    }
+                }
+            }
+        }
+    }
+}

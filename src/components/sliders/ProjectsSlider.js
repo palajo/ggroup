@@ -21,6 +21,17 @@ export default function ProjectsSlider() {
 
                 prevArrow:'<div class="slider-arrow prev"><div class="icon arrow-left"></div></div>',
                 nextArrow:'<div class="slider-arrow next"><div class="icon arrow-right"></div></div>',
+
+                responsive: [
+                    {
+                      breakpoint: 767,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                      }
+                    },
+                ]
             });
         });
     }, [])

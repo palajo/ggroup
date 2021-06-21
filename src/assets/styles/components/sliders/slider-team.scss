@@ -118,3 +118,38 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) { 
+    section {
+        &#team {
+            .container {
+                .row {
+                    .col-12 {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    .team-slider {
+        margin-left: -8px;
+        margin-right: 0;
+
+        .slick-list {
+            padding: 0 15% 0 0;
+        }
+        .member-block {
+            .member-image {
+                height: 220px;
+
+                img {
+                    height: 220px;
+                }
+            }
+
+            .member-about {
+                display: none;
+            }
+        }
+    }
+}

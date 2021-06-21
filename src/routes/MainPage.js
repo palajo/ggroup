@@ -23,7 +23,7 @@ import SectionDoubleContact from '../components/sections/SectionDoubleContact';
 export default function MainPage() {
 
     useEffect(() => {
-        $(document).ready(function() {
+        $(document, window).ready(function() {
             $('.team-slider').not('.slick-initialized').slick({
                 slidesToShow: 6,
                 slidesToScroll: 1,
@@ -34,6 +34,38 @@ export default function MainPage() {
 
                 prevArrow:'<div className="slider-arrow prev"><div className="icon arrow-left"></div></div>',
                 nextArrow:'<div className="slider-arrow next"><div className="icon arrow-right"></div></div>',
+            });
+
+            if (window.innerWidth < 768) {
+                $('.mainpage-projects-slider').not('.slick-initialized').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+    
+                    infinite: true,
+                    arrows: false,
+                    swipeToSlide: true
+                });
+            } else {
+                if ($('.mainpage-projects-slider').hasClass('slick-initialized')) {
+                    $('.mainpage-projects-slider').slick('unslick');
+                }
+            }
+
+            $(window).resize(function(e){
+                if (window.innerWidth < 768) {
+                    $('.projects-slider').not('.slick-initialized').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+        
+                        infinite: true,
+                        arrows: false,
+                        swipeToSlide: true
+                    });
+                } else {
+                    if ($('.projects-slider').hasClass('slick-initialized')) {
+                        $('.projects-slider').slick('unslick');
+                    }
+                }
             });
         });
     }, []);
@@ -74,7 +106,7 @@ export default function MainPage() {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <h2 className="section-title">
+                            <h2 className="section-title text-center text-md-start">
                                 Services
                             </h2>
                             <div className="blocks-row">
@@ -151,10 +183,10 @@ export default function MainPage() {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <h2 className="section-title">
+                            <h2 className="section-title text-center text-md-start">
                                 Projects
                             </h2>
-                            <div className="blocks-row">
+                            <div className="blocks-row mainpage-projects-slider">
                                 <div className="col-6 project-block">
                                     <div className="project-image">
                                         <img src={ProjectImage1} alt="Globarch Project 1" />

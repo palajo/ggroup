@@ -26,3 +26,19 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .projects-hero {
+        padding: 20px 0 50px 0;
+    
+        .projects-hero-content {
+            p {
+                margin-bottom: 30px;
+            }
+    
+            .projects-hero-title {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,4 +1,6 @@
 form {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 
     .form-row {
@@ -166,6 +168,19 @@ form {
                     background-color: $primary;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    form {    
+        .form-row {    
+            .form-block {
+            }
+
+        }
+        button {
+            align-self: center;
         }
     }
 }

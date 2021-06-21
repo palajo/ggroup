@@ -35,10 +35,10 @@ header {
                     padding-top: 15px;
 
                     &>* {
-                        margin-right: 40px;
+                        margin-left: 40px;
 
-                        &:last-child {
-                            margin-right: 0;
+                        &:first-child {
+                            margin-left: 0;
                         }
                     }
 
@@ -132,7 +132,7 @@ header {
                         z-index: 99;
 
                         &>* {
-                            margin-right: 0;
+                            margin-left: 0;
                             margin-bottom: 40px;
 
                             &:last-child {

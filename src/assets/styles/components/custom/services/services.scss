@@ -3,6 +3,7 @@ ul.benefits-list {
     flex-wrap: wrap;
 
     list-style: none;
+    padding-left: 0;
     margin-bottom: -20px;
 
     li {
@@ -65,6 +66,50 @@ section.four-blocks {
     
                     .project-gallery-block-content {
                         order: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    ul.benefits-list {
+        padding: 0 15px;
+
+        li {
+            width: 100%;
+
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+    section.four-blocks {
+        .section-title {
+            margin-left: 0;
+            text-align: center;
+        }
+    
+        &.reverse {
+            .project-gallery {
+                .project-gallery-block {        
+                    &.block-with-text {
+                        .project-gallery-block-image {
+                            order: 1;
+            
+                            &::before {
+                                top: -15px;
+                                left: -50px;
+                                right: auto;
+            
+                                height: calc(100% + 30px);
+                            }
+                        }
+        
+                        .project-gallery-block-content {
+                            order: 2;
+                        }
                     }
                 }
             }

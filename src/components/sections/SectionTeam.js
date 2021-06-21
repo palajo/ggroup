@@ -8,7 +8,7 @@ export default function SectionTeam() {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <h2 className="section-title">
+                        <h2 className="section-title text-center text-md-start">
                             Our team
                         </h2>
                         <TeamSlider />

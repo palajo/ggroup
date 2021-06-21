@@ -116,11 +116,11 @@ export default function ProjectPage() {
                             <h2 className="section-title">
                                 About
                             </h2>
-                            <p>
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
                             </p>
                             <hr />
-                            <p>
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
                             </p>
                         </div>
@@ -153,8 +153,8 @@ export default function ProjectPage() {
                 </div>
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-8 text-center">
-                            <p>
+                        <div className="col-md-8 text-center">
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam .
                             </p>
                         </div>
@@ -168,7 +168,7 @@ export default function ProjectPage() {
                             <h2 className="section-title">
                                 Location
                             </h2>
-                            <p>
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
                             </p>
                         </div>
@@ -197,8 +197,8 @@ export default function ProjectPage() {
                 </div>
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-8 text-center">
-                            <p>
+                        <div className="col-md-8 text-center">
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam .
                             </p>
                         </div>
@@ -212,7 +212,7 @@ export default function ProjectPage() {
                             <h2 className="section-title">
                                 Design
                             </h2>
-                            <p>
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
                             </p>
                         </div>
@@ -239,8 +239,8 @@ export default function ProjectPage() {
                 </div>
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-8 text-center">
-                            <p>
+                        <div className="col-md-8 text-center">
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam .
                             </p>
                         </div>
@@ -269,7 +269,7 @@ export default function ProjectPage() {
                             <h2 className="section-title">
                                 Easter Egg
                             </h2>
-                            <p>
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
                             </p>
                         </div>
@@ -301,7 +301,7 @@ export default function ProjectPage() {
                             <h2 className="section-title">
                                 Team
                             </h2>
-                            <p className="section-description">
+                            <p className="section-description text-start text-md-center d-none d-md-block">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis 
                             </p>
                             <TeamSlider />
@@ -312,7 +312,7 @@ export default function ProjectPage() {
             <section className="section other-projects">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-12 no-padding-mobile">
                             <h2 className="section-title">
                                 Other projects
                             </h2>

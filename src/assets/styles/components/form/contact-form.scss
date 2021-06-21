@@ -48,3 +48,14 @@
         background: $lightgray;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .contact-form {
+        padding: 40px 30px;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}

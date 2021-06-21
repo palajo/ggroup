@@ -24,6 +24,17 @@ export default function TeamSlider() {
 
                 prevArrow:'<div class="slider-arrow prev"><div class="icon arrow-left"></div></div>',
                 nextArrow:'<div class="slider-arrow next"><div class="icon arrow-right"></div></div>',
+
+                responsive: [
+                    {
+                      breakpoint: 767,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false
+                      }
+                    },
+                ]
             });
         });
     }, []);

@@ -33,3 +33,26 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .project-hero { 
+        padding-top: 20px;
+
+        .project-hero-title {
+            margin-bottom: 20px;
+            padding: 0 15px;
+
+            p {
+                margin: 20px auto 0 auto;
+            }
+
+            button {
+                margin-top: 30px;
+            }
+        }
+
+        .project-hero-background {
+            height: 220px;
+        }
+    }
+}

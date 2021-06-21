@@ -71,3 +71,19 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .service-block {
+        &.col-3 {
+            margin: 0 0 10px 0;
+
+            &:nth-last-child(-n + 4) {
+                margin: 0 0 10px 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

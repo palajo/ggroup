@@ -70,3 +70,19 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .project-block {
+        &.col-6 {
+            margin: 0 0 10px 0;
+
+            &:nth-last-child(-n + 2) {
+                margin: 0 0 10px 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

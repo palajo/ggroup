@@ -65,7 +65,7 @@ export default function InterriorDesignPage() {
                             <h2 className="section-title">
                                 Housing and apartments
                             </h2>
-                            <p>
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
                             </p>
                         </div>
@@ -95,8 +95,8 @@ export default function InterriorDesignPage() {
                 </div>
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-8 text-center">
-                            <p>
+                        <div className="col-md-8 text-center">
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam .
                             </p>
                         </div>
@@ -116,8 +116,8 @@ export default function InterriorDesignPage() {
                 </div>
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-8 text-center">
-                            <p>
+                        <div className="col-md-8 text-center">
+                            <p className="text-start text-md-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam .
                             </p>
                             <button className="button mt-30px">
@@ -130,8 +130,8 @@ export default function InterriorDesignPage() {
             <section className="section">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12">
-                            <h2 className="section-title">
+                        <div className="col-12 no-padding-mobile">
+                            <h2 className="section-title text-center text-md-start">
                                 Our projects
                             </h2>
                             <ProjectsSlider />
