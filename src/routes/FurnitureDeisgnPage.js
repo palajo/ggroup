@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
 import FurnitureImage1 from '../assets/images/furniture-design/image-1.jpg'
@@ -19,8 +20,6 @@ import FurnitureImage16 from '../assets/images/furniture-design/image-16.jpg'
 import FurnitureImage17 from '../assets/images/furniture-design/image-17.jpg'
 import SectionClients from '../components/sections/SectionClients'
 import SectionContact from '../components/sections/SectionContact'
-
-
 
 export default function FurnitureDeisgnPage() {
     return (

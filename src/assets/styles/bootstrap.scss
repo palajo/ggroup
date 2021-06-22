@@ -53,6 +53,8 @@ a.nav-link {
     }
 
     &.dropdown-toggle {
+        cursor: pointer;
+        
         &::after {
             margin: 0;
             vertical-align: auto;
@@ -341,7 +343,8 @@ ul.nav.flex-column {
         }
     
         ul.dropdown-menu {
-            padding: 0;
+            margin-left: -15px;
+            padding: 0 15px 10px 15px;
             border: 0;
     
             min-width: auto;
@@ -403,5 +406,9 @@ ul.nav.flex-column {
                 padding: 10px 0;
             }
         }
+    }
+
+    .mt-100px {
+        margin-top: 30px;
     }
 }

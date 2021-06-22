@@ -23,51 +23,28 @@ import SectionDoubleContact from '../components/sections/SectionDoubleContact';
 export default function MainPage() {
 
     useEffect(() => {
-        $(document, window).ready(function() {
-            $('.team-slider').not('.slick-initialized').slick({
-                slidesToShow: 6,
-                slidesToScroll: 1,
-
-                infinite: true,
-                arrows: true,
-                swipeToSlide: true,
-
-                prevArrow:'<div className="slider-arrow prev"><div className="icon arrow-left"></div></div>',
-                nextArrow:'<div className="slider-arrow next"><div className="icon arrow-right"></div></div>',
-            });
-
-            if (window.innerWidth < 768) {
+        function mainpageProjectsSlider() {
+            if ($(window).width() < 768) {
                 $('.mainpage-projects-slider').not('.slick-initialized').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
-    
                     infinite: true,
                     arrows: false,
-                    swipeToSlide: true
+                    swipeToSlide: true,
+                    mobileFirst: true,
                 });
-            } else {
-                if ($('.mainpage-projects-slider').hasClass('slick-initialized')) {
-                    $('.mainpage-projects-slider').slick('unslick');
-                }
+            } else if ($(window).width() > 768) {
+                $('.mainpage-projects-slider.slick-initialized').slick('unslick');
             }
+        }
 
-            $(window).resize(function(e){
-                if (window.innerWidth < 768) {
-                    $('.projects-slider').not('.slick-initialized').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-        
-                        infinite: true,
-                        arrows: false,
-                        swipeToSlide: true
-                    });
-                } else {
-                    if ($('.projects-slider').hasClass('slick-initialized')) {
-                        $('.projects-slider').slick('unslick');
-                    }
-                }
-            });
+        $(document).ready(function() {
+            mainpageProjectsSlider();
         });
+
+        $(window).on('resize', function(){
+            mainpageProjectsSlider();
+       });
     }, []);
 
     return (

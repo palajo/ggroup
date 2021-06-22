@@ -78,7 +78,7 @@ export default function Header() {
                                 </li>
                             </ul>
                             <div className="dropdown language-switcher-dropdown">
-                                <a className="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     en
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">

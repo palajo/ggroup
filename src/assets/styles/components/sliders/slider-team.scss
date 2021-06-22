@@ -150,6 +150,14 @@
             .member-about {
                 display: none;
             }
+
+            &:hover {
+                .member-image {
+                    img {
+                        transform: translateY(0)
+                    }
+                }
+            }
         }
     }
 }

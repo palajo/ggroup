@@ -6,7 +6,6 @@
         margin-bottom: 0;
     }
 
-
     .architecture-block-content {
         display: flex;
         padding-right: 100px;
@@ -15,7 +14,7 @@
         min-height: 400px;
 
         &::before {
-            content: '';
+            content: "";
             position: absolute;
 
             top: 0;
@@ -30,7 +29,7 @@
         }
 
         &::after {
-            content: '';
+            content: "";
             position: absolute;
 
             bottom: 0;
@@ -43,7 +42,7 @@
 
             z-index: -1;
         }
-        
+
         .architecture-block-number {
             display: flex;
             align-items: center;
@@ -105,12 +104,83 @@
             }
             .architecture-block-image {
                 order: 1;
-                
+
                 position: absolute;
                 right: auto;
                 left: 0;
             }
-    
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .architecture-block {
+        min-height: auto;
+        margin-bottom: 30px;
+
+        .architecture-block-content {
+            position: relative;
+            flex-wrap: wrap;
+            min-height: auto;
+            padding: 0 15px;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+
+            .architecture-block-text {
+                margin-top: 15px;
+                padding-left: 0;
+                width: 100%;
+
+                h4 {
+                    position: absolute;
+
+                    top: 0;
+                    left: 120px;
+
+                    display: flex;
+                    align-items: center;
+
+                    height: 80px;
+                    width: calc(100% - 135px);
+                }
+            }
+        }
+
+        .architecture-block-image {
+            position: relative;
+            height: 220px;
+            padding: 0;
+
+            margin-top: 30px;
+
+            img {
+                height: 100%;
+                width: 100%;
+
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        &.reverse {
+            .row {
+                .architecture-block-content {
+                    order: 1;
+                    padding: 0 15px;
+
+                    &::before,
+                    &::after {
+                        display: none;
+                    }
+                }
+                .architecture-block-image {
+                    order: 2;
+                    position: relative;
+                }
+            }
         }
     }
 }

@@ -14,3 +14,9 @@ section.about-hero {
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    section.about-hero {
+        height: 200px;
+    }
+}

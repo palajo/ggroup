@@ -55,3 +55,17 @@ section.about-information {
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    section.about-information {
+        margin-bottom: 30px;
+
+        .container {
+            padding-right: 50px;
+
+            .slogan {
+                transform: rotate(90deg) translateY(-70px) translateX(300px);
+            }
+        }
+    }
+}

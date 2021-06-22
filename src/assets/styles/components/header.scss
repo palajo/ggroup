@@ -124,11 +124,13 @@ header {
 
                         width: 100vw !important;
                         height: calc(100% - 80px);
+                        max-height: calc(100% - 80px);
 
                         padding: 20px 30px;
 
                         background: #fff;
 
+                        overflow: auto;
                         z-index: 99;
 
                         &>* {

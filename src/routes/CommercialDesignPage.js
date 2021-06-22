@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
 import CommercialImage1 from '../assets/images/commercial-design/image-1.jpg'
@@ -20,8 +21,6 @@ import CommercialImage17 from '../assets/images/commercial-design/image-17.jpg'
 
 import SectionClients from '../components/sections/SectionClients'
 import SectionContact from '../components/sections/SectionContact'
-
-
 
 export default function CommercialDesignPage() {
     return (

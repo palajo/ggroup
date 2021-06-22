@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import SectionContact from '../components/sections/SectionContact'
 
@@ -7,7 +8,7 @@ export default function ContactsPage() {
             <section className="section section-contacts">
                 <div className="container">
                     <div className="row">
-                        <div className="col-5">
+                        <div className="col-md-5">
                             <h1 className="section-title">
                                 Contacts
                             </h1>
@@ -48,7 +49,7 @@ export default function ContactsPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-7 contacts-map">
+                        <div className="col-md-7 contacts-map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d643.3677463122051!2d24.034190460769146!3d49.83360726305589!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea77690e785aad1b!2sGlobarch%20Group!5e0!3m2!1sru!2sua!4v1621930265936!5m2!1sru!2sua" title="globarch-group-location" loading="lazy"></iframe>
                         </div>
                     </div>
