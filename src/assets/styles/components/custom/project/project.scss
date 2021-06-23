@@ -391,3 +391,119 @@ ul.project-navigation {
         }
     }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    ul.project-navigation {
+        display: block;
+
+        padding: 25px 0;
+        max-width: 100%;
+    
+        border-left: 0;
+        border-right: 0;
+
+        white-space:nowrap;
+        overflow-x: auto;
+
+        li.nav-item {
+            display: inline-block;
+            padding: 0 10px;
+
+            a.nav-link {
+                font-size: 12px;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
+
+    .project-gallery {
+        padding: 25px 0;
+
+        .image-height-300 {
+            height: 175px;
+        }
+
+        .image-height-350 {
+            height: 200px;
+        }
+
+        .image-height-400 {
+            height: 250px;
+        }
+
+        .image-height-500 {
+            height: 300px;
+        }
+
+        .image-height-700 {
+            height: 350px;
+        }
+
+        .image-height-800 {
+            height: 450px;
+        }
+
+        .project-gallery-block {
+            &.block-with-text {
+                .project-gallery-block-image {
+                    order: 1 !important;
+                    width: 100%;
+    
+                    &::before {
+                        top: 50px;
+                        left: auto;
+                        right: 0;
+                        width: 100%;
+                        height: calc(100% - 100px);
+                    }
+                }
+    
+                .project-gallery-block-content {
+                    order: 2 !important;
+                    padding: 50px 30px 30px 30px;
+                    width: 100%;
+    
+                    .project-gallery-block-description {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+    
+                    .project-gallery-block-links {
+                        margin-top: 30px;
+    
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+    
+                        a {
+                            display: flex;
+                            align-items: center;
+    
+                            font-size: 14px;
+                            line-height: 20px;
+    
+                            margin-right: 50px;
+    
+                            &:last-child {
+                                margin-right: 0;
+                            }
+    
+                            &::after {
+                                margin-left: 20px;
+                                width: 20px;
+                            }
+    
+                            &:hover {
+                                &::after {
+                                    width: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

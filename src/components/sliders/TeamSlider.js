@@ -34,6 +34,20 @@ export default function TeamSlider() {
                         arrows: false
                       }
                     },
+                    {
+                        breakpoint: 1023,
+                        settings: {
+                          slidesToShow: 3,
+                          slidesToScroll: 1
+                        } 
+                    },
+                    {
+                        breakpoint: 1439,
+                        settings: {
+                          slidesToShow: 5,
+                          slidesToScroll: 1
+                        } 
+                    }
                 ]
             });
         });

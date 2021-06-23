@@ -31,6 +31,13 @@ export default function ProjectsSlider() {
                         arrows: false
                       }
                     },
+                    {
+                        breakpoint: 1023,
+                        settings: {
+                          slidesToShow: 2,
+                          slidesToScroll: 1
+                        }
+                      },
                 ]
             });
         });

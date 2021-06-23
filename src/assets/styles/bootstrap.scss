@@ -2,11 +2,19 @@
 // Option B: Include parts of Bootstrap
 
 // Required
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1440px
+);
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
+  sm: 450px,
+  md: 718px,
+  lg: 964px,
   xl: 1140px,
   xxl: 1480px
 );
@@ -313,17 +321,18 @@ ul.nav.flex-column {
                     display: inline-block;
 
                     font-size: 12px;
-                    line-height: 12px;
+                    line-height: 20px;
 
                     font-weight: 500;
                     color: $primary;
 
                     text-transform: uppercase;
 
-                    padding: 20px 15px;
+                    padding: 15px 15px;
                     background: none;
 
                     border-bottom: 1px solid $primary;
+                    white-space: pre-wrap;
 
                     &:hover {
                         color: $secondary;
@@ -410,5 +419,31 @@ ul.nav.flex-column {
 
     .mt-100px {
         margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .mt-100px {
+        margin-top: 50px;
+    }
+
+    .dropdown {
+        &.language-switcher-dropdown {
+            a.nav-link {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            ul.dropdown-menu {
+                padding: 5px 15px 15px 15px;
+
+                li {
+                    a.dropdown-item {
+                        font-size: 16px;
+                        line-height: 24px;        
+                    }
+                }
+            }
+        }
     }
 }

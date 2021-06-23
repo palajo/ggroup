@@ -47,7 +47,7 @@ export default function ArchitecturePlanningPage() {
             <section className="architechure-hero">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-8">
+                        <div className="col-md-12 col-lg-8">
                             <h1 className="section-title text-center text-md-start">
                                 Architecture planning
                             </h1>
@@ -110,7 +110,7 @@ export default function ArchitecturePlanningPage() {
                     <div className="row">
                         <div className="col-12 architecture-block">
                             <div className="row">
-                                <div className="col-md-6 architecture-block-content">
+                                <div className="col-md-12 col-lg-6 architecture-block-content">
                                     <div className="architecture-block-number">
                                         1
                                     </div>
@@ -123,14 +123,14 @@ export default function ArchitecturePlanningPage() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-md-6 architecture-block-image">
+                                <div className="col-md-12 col-lg-6 architecture-block-image">
                                     <img src={ArchitectureImage1} />
                                 </div>
                             </div>
                         </div>
                         <div className="col-12 architecture-block reverse">
                             <div className="row">
-                                <div className="col-md-6 architecture-block-content">
+                                <div className="col-md-12 col-lg-6 architecture-block-content">
                                     <div className="architecture-block-number">
                                         2
                                     </div>
@@ -143,14 +143,14 @@ export default function ArchitecturePlanningPage() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-md-6 architecture-block-image">
+                                <div className="col-md-12 col-lg-6 architecture-block-image">
                                     <img src={ArchitectureImage2} />
                                 </div>
                             </div>
                         </div>
                         <div className="col-12 architecture-block">
                             <div className="row">
-                                <div className="col-md-6 architecture-block-content">
+                                <div className="col-md-12 col-lg-6 architecture-block-content">
                                     <div className="architecture-block-number">
                                         3
                                     </div>
@@ -163,14 +163,14 @@ export default function ArchitecturePlanningPage() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-md-6 architecture-block-image">
+                                <div className="col-md-12 col-lg-6 architecture-block-image">
                                     <img src={ArchitectureImage3} />
                                 </div>
                             </div>
                         </div>
                         <div className="col-12 architecture-block reverse">
                             <div className="row">
-                                <div className="col-md-6 architecture-block-content">
+                                <div className="col-md-12 col-lg-6 architecture-block-content">
                                     <div className="architecture-block-number">
                                         4
                                     </div>
@@ -183,14 +183,14 @@ export default function ArchitecturePlanningPage() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-md-6 architecture-block-image">
+                                <div className="col-md-12 col-lg-6 architecture-block-image">
                                     <img src={ArchitectureImage4} />
                                 </div>
                             </div>
                         </div>
                         <div className="col-12 architecture-block">
                             <div className="row">
-                                <div className="col-md-6 architecture-block-content">
+                                <div className="col-md-12 col-lg-6 architecture-block-content">
                                     <div className="architecture-block-number">
                                         5
                                     </div>
@@ -203,7 +203,7 @@ export default function ArchitecturePlanningPage() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-md-6 architecture-block-image">
+                                <div className="col-md-12 col-lg-6 architecture-block-image">
                                     <img src={ArchitectureImage5} />
                                 </div>
                             </div>
@@ -220,7 +220,7 @@ export default function ArchitecturePlanningPage() {
                                 Our architecture projects
                             </h2>
                             <div className="blocks-row mainpage-projects-slider">
-                                <div className="col-6 project-block">
+                                <div className="col-md-6 project-block">
                                     <div className="project-image">
                                         <img src={ProjectImage1} alt="Globarch Project 1" />
                                     </div>
@@ -239,7 +239,7 @@ export default function ArchitecturePlanningPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-6 project-block">
+                                <div className="col-md-6 project-block">
                                     <div className="project-image">
                                         <img src={ProjectImage2} alt="Globarch Project 2" />
                                     </div>

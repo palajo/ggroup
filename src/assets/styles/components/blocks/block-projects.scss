@@ -73,15 +73,29 @@
 
 @media screen and (max-width: 767px) {
     .project-block {
-        &.col-6 {
+        margin: 0 0 10px 0;
+
+        &:nth-last-child(-n + 2) {
             margin: 0 0 10px 0;
+        }
 
-            &:nth-last-child(-n + 2) {
-                margin: 0 0 10px 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.col-md-6 {
+            .project-image {
+                height: 280px;
             }
+        }
+    }
+}
 
-            &:last-child {
-                margin-bottom: 0;
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .project-block {
+        &.col-md-6 {
+            .project-image {
+                height: 250px;
             }
         }
     }

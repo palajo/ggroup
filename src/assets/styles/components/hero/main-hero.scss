@@ -102,3 +102,29 @@ section.main-hero {
         }
     }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    section.main-hero {
+        height: auto;
+        min-height: 450px;
+        
+        background-size: auto 350px;
+        background-position: left bottom;
+
+        margin-bottom: 25px;
+
+        .container {
+            .row {
+                .main-hero-content {
+                    margin-top: 30px;
+                    text-align: right;
+                }
+
+                .main-hero-social {
+                    bottom: -120px;
+                    left: 120px;
+                }
+            }
+        }
+    }
+}

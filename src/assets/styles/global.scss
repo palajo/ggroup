@@ -161,6 +161,17 @@ hr {
         }
     }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    p {
+        &.size-18px {
+            font-size: 16px;
+            line-height: 28px;
+
+            font-weight: normal;
+        }
+    }
+}
 /* ----------------------------------------- */
 
 
@@ -170,6 +181,7 @@ button.button {
     display: inline-block;
 
     min-width: 200px;
+    width: fit-content;
     height: 50px;
 
     padding: 0 30px;
@@ -232,6 +244,7 @@ main {
         }
     }
 }
+
 @media screen and (max-width: 767px) {
     main {
         min-height: calc(100vh - 80px);
@@ -239,6 +252,35 @@ main {
         section {    
             .section-title {
                 margin-bottom: 20px;
+            }
+            
+            .section-description {
+                margin-top: -15px;
+                margin-bottom: 30px;
+            }
+        
+            .section-button {
+                margin-top: 30px;
+            }
+    
+            &.section {
+                padding: 25px 0;
+
+                &.double-padding {
+                    padding: 50px 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    main {
+        min-height: calc(100vh - 90px);
+    
+        section {    
+            .section-title {
+                margin-bottom: 30px;
             }
             
             .section-description {

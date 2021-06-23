@@ -6,7 +6,7 @@ export default function SectionContact() {
         <section className="section">
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-md-6 contact-form">
+                    <div className="col-md-12 col-lg-10 col-xl-8 col-xxl-6 contact-form">
                         <h3 className="bold">
                             Are you interested in construction with us?
                         </h3>

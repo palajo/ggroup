@@ -152,3 +152,71 @@ header {
         }
     }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+    header {
+        .container {
+            .row {
+                .col-12 {
+                    .left-block {
+                        .logo {
+                            img {
+                                height: 60px;
+                            }
+                        }
+                    }
+
+                    .navigation-toggler {
+                        display: block;
+                    }
+
+                    .right-block {
+                        display: none;
+                        position: fixed;
+
+                        top: 90px;
+                        left: 0;
+
+                        width: 400px !important;
+                        height: calc(100% - 90px);
+                        max-height: calc(100% - 90px);
+
+                        padding: 20px 30px;
+
+                        background: #fff;
+
+                        overflow: auto;
+                        z-index: 99;
+
+                        &>* {
+                            margin-left: 0;
+                            margin-bottom: 40px;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        .contacts-phone {
+                            display: block;
+                            text-align: center;
+                        }
+
+                        ul.main-nav {
+                            flex-direction: column;
+
+                            li.nav-item {
+                                a.nav-link {
+                                    padding: 10px 0;
+
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

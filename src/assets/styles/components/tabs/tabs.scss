@@ -94,3 +94,27 @@
         }
     }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .tabs-container {
+        .tab-content {
+            .tab-pane {
+                .tab-pane-row {
+                    display: flex;
+                    align-items: center;
+    
+                    width: 100%;
+    
+                    .tab-pane-col {
+                        width: 100%;
+                        padding: 60px 30px;
+
+                        &.contacts-tab-block {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -56,3 +56,17 @@
         }
     }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .project-hero { 
+        padding-top: 50px;
+
+        .project-hero-title {
+            padding: 0 30px;
+        }
+
+        .project-hero-background {
+            height: 350px;
+        }
+    }
+}

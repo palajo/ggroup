@@ -170,17 +170,8 @@ form {
             }
         }
     }
-}
 
-@media screen and (max-width: 767px) {
-    form {    
-        .form-row {    
-            .form-block {
-            }
-
-        }
-        button {
-            align-self: center;
-        }
+    button {
+        align-self: center;
     }
 }

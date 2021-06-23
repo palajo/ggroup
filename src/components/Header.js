@@ -23,6 +23,12 @@ export default function Header() {
                 $('.right-block').toggle('slide');
             })
         });
+
+        $(window).on('resize', function(){
+            if ($(window).width() > 1439 && ($('.right-block').css('display') === 'none')) {
+                $('.right-block').fadeIn(0).css('display', 'flex');
+            }
+        });
     }, []);
 
     return (

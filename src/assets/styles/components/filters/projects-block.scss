@@ -110,3 +110,28 @@
         }
     }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .projects-block {    
+        .projects-image {
+            height: 300px;
+        }
+
+        .projects-title {    
+            padding-left: 30px;
+            padding-bottom: 50px;
+        }
+
+        &:nth-child(2n) {
+            .projects-image {
+                order: 2;
+            }
+            .projects-title {
+                order: 1;
+                justify-content: center;
+
+                padding-left: 30px;
+            }
+        }
+    }
+}
