@@ -26,3 +26,9 @@ section.about-hero {
         height: 350px;
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    section.about-hero {
+        height: 600px;
+    }
+}

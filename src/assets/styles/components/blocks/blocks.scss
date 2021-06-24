@@ -150,3 +150,15 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .blocks-row {
+        .col-xl-3 {
+            width: calc(25% - 15px);
+
+            &:nth-last-child(-n + 4) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

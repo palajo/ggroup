@@ -507,3 +507,28 @@ ul.project-navigation {
         }
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .project-gallery {
+        padding: 35px 0;
+        
+        .project-gallery-block {
+            &.block-with-text {
+                .project-gallery-block-image {
+
+                    &::before {
+                        top: -20px;
+                        left: auto;
+                        right: -30px;
+                        width: 100%;
+                        height: calc(100% - 100px);
+                    }
+                }
+
+                .project-gallery-block-content {
+                    padding: 0 50px;
+                }
+            }
+        }
+    }
+}

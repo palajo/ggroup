@@ -2,6 +2,7 @@
     margin: 0 7.5px;
     padding: 25px;
     border: 1px solid $primary;
+    margin-bottom: 15px;
 
     .service-block-title {
         display: flex;
@@ -92,6 +93,22 @@
 
         &:nth-last-child(-n + 2) {
             margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .service-block {
+        .service-block-title {
+            font-size: 18px;
+            line-height: 24px;
+
+            word-wrap: pre-wrap;
+    
+            img {
+                height: 50px;
+                margin-right: 20px;
+            }
         }
     }
 }

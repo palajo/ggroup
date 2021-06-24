@@ -302,6 +302,35 @@ main {
         }
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    main {
+        min-height: calc(100vh - 90px);
+    
+        section {    
+            .section-title {
+                margin-bottom: 50px;
+            }
+            
+            .section-description {
+                margin-top: -30px;
+                margin-bottom: 60px;
+            }
+        
+            .section-button {
+                margin-top: 60px;
+            }
+    
+            &.section {
+                padding: 35px 0;
+
+                &.double-padding {
+                    padding: 70px 0;
+                }
+            }
+        }
+    }
+}
 /* ----------------------------------------- */
 
 
