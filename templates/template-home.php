@@ -210,113 +210,17 @@
                     <h2 class="section-title text-center text-md-start">
                         Our clients
                     </h2>
-                    <div class="blocks-row">
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo1} alt="Globarch Client 1" />
-                            </a>
+                    <?php if (have_rows('section_clients_block', 'option')): ?>
+                        <div class="blocks-row">
+                            <?php while (have_rows('section_clients_block', 'option')): the_row(); ?>
+                                <div class="col-1 client-block">
+                                    <a href="<?php echo get_sub_field('client_link')['url']; ?>" target="<?php echo get_sub_field('client_link')['target']; ?>">
+                                        <img src="<?php echo get_sub_field('client_logo')['url']; ?>" alt="<?php echo get_sub_field('client_logo')['alt']; ?>" />
+                                    </a>
+                                </div>
+                            <?php endwhile; ?>
                         </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo2} alt="Globarch Client 2" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo3} alt="Globarch Client 3" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo4} alt="Globarch Client 4" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo5} alt="Globarch Client 5" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo6} alt="Globarch Client 6" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo7} alt="Globarch Client 7" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo8} alt="Globarch Client 8" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo9} alt="Globarch Client 9" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo10} alt="Globarch Client 10" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo11} alt="Globarch Client 11" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo12} alt="Globarch Client 12" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo13} alt="Globarch Client 13" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo14} alt="Globarch Client 14" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo15} alt="Globarch Client 15" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo16} alt="Globarch Client 16" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo17} alt="Globarch Client 17" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo18} alt="Globarch Client 18" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo19} alt="Globarch Client 19" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo20} alt="Globarch Client 20" />
-                            </a>
-                        </div>
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src={ClientLogo21} alt="Globarch Client 21" />
-                            </a>
-                        </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -326,114 +230,27 @@
             <div class="row">
                 <div class="col-12">
                     <h2 class="section-title text-center text-md-start">
-                        Our team
+                        <?php echo get_field('section_team_title', 'option'); ?>
                     </h2>
-                    <div class="team-slider">
-                        <div class="member-block">
-                            <div class="member-image">
-                                <img src={TeamMember1} alt="Globarch Team Member 1" />
-                            </div>
-                            <div class="member-about">
-                                <div class="member-name">
-                                    Pavlova Irina
+                    <?php if (have_rows('section_team_member_block', 'option')): ?>
+                        <div class="team-slider">
+                            <?php while (have_rows('section_team_member_block', 'option')): the_row(); ?>
+                                <div class="member-block">
+                                    <div class="member-image">
+                                        <img src="<?php echo get_sub_field('member_image')['url']; ?>" alt="<?php echo get_sub_field('member_image')['alt']; ?>" />
+                                    </div>
+                                    <div class="member-about">
+                                        <div class="member-name">
+                                            <?php echo the_sub_field('member_name'); ?>
+                                        </div>
+                                        <div class="member-position">
+                                            <?php echo the_sub_field('member_position'); ?>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="member-position">
-                                    CEO
-                                </div>
-                            </div>
+                            <?php endwhile; ?>
                         </div>
-                        <div class="member-block">
-                            <div class="member-image">
-                                <img src={TeamMember2} alt="Globarch Team Member 1" />
-                            </div>
-                            <div class="member-about">
-                                <div class="member-name">
-                                    Pavlova Irina
-                                </div>
-                                <div class="member-position">
-                                    CEO
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-block">
-                            <div class="member-image">
-                                <img src={TeamMember3} alt="Globarch Team Member 1" />
-                            </div>
-                            <div class="member-about">
-                                <div class="member-name">
-                                    Pavlova Irina
-                                </div>
-                                <div class="member-position">
-                                    CEO
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-block">
-                            <div class="member-image">
-                                <img src={TeamMember4} alt="Globarch Team Member 1" />
-                            </div>
-                            <div class="member-about">
-                                <div class="member-name">
-                                    Pavlova Irina
-                                </div>
-                                <div class="member-position">
-                                    CEO
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-block">
-                            <div class="member-image">
-                                <img src={TeamMember5} alt="Globarch Team Member 1" />
-                            </div>
-                            <div class="member-about">
-                                <div class="member-name">
-                                    Pavlova Irina
-                                </div>
-                                <div class="member-position">
-                                    CEO
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-block">
-                            <div class="member-image">
-                                <img src={TeamMember6} alt="Globarch Team Member 1" />
-                            </div>
-                            <div class="member-about">
-                                <div class="member-name">
-                                    Pavlova Irina
-                                </div>
-                                <div class="member-position">
-                                    CEO
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-block">
-                            <div class="member-image">
-                                <img src={TeamMember1} alt="Globarch Team Member 1" />
-                            </div>
-                            <div class="member-about">
-                                <div class="member-name">
-                                    Pavlova Irina
-                                </div>
-                                <div class="member-position">
-                                    CEO
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-block">
-                            <div class="member-image">
-                                <img src={TeamMember2} alt="Globarch Team Member 6" />
-                            </div>
-                            <div class="member-about">
-                                <div class="member-name">
-                                    Pavlova Irina
-                                </div>
-                                <div class="member-position">
-                                    CEO
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
