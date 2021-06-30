@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    color: $primary;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* h1, h2, h3, h4, h5, p, b, a */
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 64px;
+
+    font-weight: 800;
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &.bold {
+        font-size: 28px;
+        line-height: 36px;
+
+        font-weight: 600;
+        text-transform: none;
+    }
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 14px;
+    line-height: 24px;
+
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    line-height: 30px;
+
+    margin-bottom: 15px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &.size-18px {
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+b {
+    font-weight: 500;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+hr {
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    border: 0;
+    border-top: 1px solid $lightgray;
+
+    margin: 70px 0 30px 0;
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    p {
+        &.size-18px {
+            font-size: 14px;
+            line-height: 24px;
+
+            font-weight: normal;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    p {
+        &.size-18px {
+            font-size: 16px;
+            line-height: 28px;
+
+            font-weight: normal;
+        }
+    }
+}
+/* ----------------------------------------- */
+
+
+/* button */
+button.button {
+    cursor: pointer;
+    display: inline-block;
+
+    min-width: 200px;
+    width: fit-content;
+    height: 50px;
+
+    padding: 0 30px;
+
+    border: 1px solid $primary;
+    outline: none;
+    background: none;
+
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 300;
+
+    text-transform: lowercase;
+    transition: 0.1s ease;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+/* ----------------------------------------- */
+
+
+/* section */
+main {
+    min-height: calc(100vh - 110px);
+
+    section {    
+        .section-title {
+            margin-bottom: 60px;
+        }
+        
+        .section-description {
+            margin-top: -30px;
+            margin-bottom: 60px;
+        }
+    
+        .section-button {
+            display: flex;
+            justify-content: center;
+    
+            width: 100%;
+            margin-top: 60px;
+            
+            a {
+                display: inline-block;
+            }
+        }
+
+        &.section {
+            padding: 50px 0;
+
+            &.double-padding {
+                padding: 100px 0;
+            }
+        }
+
+        &.gray {
+            background: #F2F2F2;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        min-height: calc(100vh - 80px);
+    
+        section {    
+            .section-title {
+                margin-bottom: 20px;
+            }
+            
+            .section-description {
+                margin-top: -15px;
+                margin-bottom: 30px;
+            }
+        
+            .section-button {
+                margin-top: 30px;
+            }
+    
+            &.section {
+                padding: 25px 0;
+
+                &.double-padding {
+                    padding: 50px 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    main {
+        min-height: calc(100vh - 90px);
+    
+        section {    
+            .section-title {
+                margin-bottom: 30px;
+            }
+            
+            .section-description {
+                margin-top: -15px;
+                margin-bottom: 30px;
+            }
+        
+            .section-button {
+                margin-top: 30px;
+            }
+    
+            &.section {
+                padding: 25px 0;
+
+                &.double-padding {
+                    padding: 50px 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    main {
+        min-height: calc(100vh - 90px);
+    
+        section {    
+            .section-title {
+                margin-bottom: 50px;
+            }
+            
+            .section-description {
+                margin-top: -30px;
+                margin-bottom: 60px;
+            }
+        
+            .section-button {
+                margin-top: 60px;
+            }
+    
+            &.section {
+                padding: 35px 0;
+
+                &.double-padding {
+                    padding: 70px 0;
+                }
+            }
+        }
+    }
+}
+/* ----------------------------------------- */
+
+
+/* custom styles */
+@media screen and (max-width: 767px) {
+    .no-padding-mobile {
+        padding: 0 !important;
+    }
+}

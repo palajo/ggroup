@@ -1,0 +1,120 @@
+.tabs-container {
+    border: 1px solid $primary;
+
+    ul.nav-tabs {
+        flex-wrap: nowrap;
+
+        li.nav-item {
+            width: 100%;
+
+            .nav-link {
+                display: inline-block;
+                width: 100%;
+                padding: 20px 40px;
+
+                font-size: 24px;
+                line-height: 30px;
+                
+                color: #fff;
+                text-align: center;
+
+                background: $primary;
+                border: none;
+                border-radius: 0;
+
+                transition: 0.2s ease;
+
+                &:hover {
+                    background: $secondary;
+                }
+
+                &.active {
+                    background: #fff;
+                    color: $primary;
+
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        .tab-pane {
+            .tab-pane-row {
+                display: flex;
+                align-items: center;
+
+                width: 100%;
+
+                .tab-pane-col {
+                    width: 100%;
+                    padding: 60px 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tabs-container {
+        ul.nav-tabs {
+            display: flex;
+            width: 100%;
+    
+            li.nav-item {
+                .nav-link {
+                    padding: 10px 15px;
+    
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .tab-content {
+            .tab-pane {
+                .tab-pane-row {
+                    display: flex;
+                    align-items: center;
+    
+                    width: 100%;
+    
+                    .tab-pane-col {
+                        width: 100%;
+                        padding: 40px 30px;
+
+                        &.contacts-tab-block {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .tabs-container {
+        .tab-content {
+            .tab-pane {
+                .tab-pane-row {
+                    display: flex;
+                    align-items: center;
+    
+                    width: 100%;
+    
+                    .tab-pane-col {
+                        width: 100%;
+                        padding: 60px 30px;
+
+                        &.contacts-tab-block {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

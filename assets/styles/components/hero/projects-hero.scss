@@ -1,0 +1,50 @@
+.projects-hero {
+    padding: 80px 0 120px 120px;
+
+    .projects-hero-content {
+        max-width: 600px;
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .projects-hero-title {
+            span {
+                display: block;
+
+                font-size: 12px;
+                line-height: 18px;
+    
+                font-weight: 500;
+                color: $disabled;
+
+                text-transform: uppercase;
+                letter-spacing: 2px;
+    
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .projects-hero {
+        padding: 20px 0 50px 0;
+    
+        .projects-hero-content {
+            p {
+                margin-bottom: 30px;
+            }
+    
+            .projects-hero-title {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .projects-hero {
+        padding: 50px 0 100px 50px;
+    }
+}

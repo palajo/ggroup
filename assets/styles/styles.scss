@@ -1,0 +1,56 @@
+@import './const.scss';
+@import './icons.scss';
+@import './bootstrap.scss';
+@import './global.scss';
+
+@import './components/header.scss';
+@import './components/footer.scss';
+
+// banners
+@import './components/hero/main-hero.scss';
+@import './components/hero/projects-hero.scss';
+@import './components/hero/project-hero.scss';
+@import './components/hero/about-hero.scss';
+@import './components/hero/architecture-hero.scss';
+
+
+
+// blocks
+@import './components/blocks/blocks.scss';
+@import './components/blocks/block-services.scss';
+@import './components/blocks/block-projects.scss';
+@import './components/blocks/block-clients.scss';
+@import './components/blocks/block-architecture.scss';
+
+
+// sliders
+@import './components/sliders/slider.scss';
+@import './components/sliders/slider-team.scss';
+@import './components/sliders/slider-projects.scss';
+
+
+// tabs
+@import './components/tabs/tabs.scss';
+
+
+// form
+@import './components/form/form.scss';
+@import './components/form/contact-form.scss';
+@import './components/form/double-contact-form.scss';
+
+
+// filters
+@import './components/filters/filters.scss';
+@import './components/filters/projects-block.scss';
+
+
+// tables
+@import './components/tables/table-profile.scss';
+
+
+// custom block styles
+@import './components/custom/project/project.scss';
+@import './components/custom/about/about.scss';
+@import './components/custom/contacts/contacts.scss';
+@import './components/custom/services/services.scss';
+

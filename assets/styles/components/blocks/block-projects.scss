@@ -1,0 +1,102 @@
+.project-block {
+    margin: 0 7.5px;
+    margin-bottom: 50px;
+
+    .project-image {
+        width: 100%;
+        height: 365px;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .project-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 25px;
+
+        .project-title-title {
+            width: fit-content;
+
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        .project-title-more {
+            a {
+                position: relative;
+
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                width: auto;
+
+                text-transform: lowercase;
+
+                div {
+                    background: white;
+                    padding-right: 20px;
+                }
+
+                &::after {
+                    display: block;
+                    content: '';
+
+                    width: 40px;
+                    height: 1px;
+                    
+                    background: $primary;
+
+                    transition: width 0.3s ease;
+                }
+
+                &:hover {
+                    color: $secondary;
+
+                    &::after {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .project-block {
+        margin: 0 0 10px 0;
+
+        &:nth-last-child(-n + 2) {
+            margin: 0 0 10px 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.col-md-6 {
+            .project-image {
+                height: 280px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .project-block {
+        &.col-md-6 {
+            .project-image {
+                height: 250px;
+            }
+        }
+    }
+}

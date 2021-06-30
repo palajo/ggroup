@@ -1,0 +1,51 @@
+.filters-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .filter-block {
+        width: 25%;
+
+        &.dropdown {
+            .dropdown-toggle {
+                border-right: 0;
+            }
+
+            .dropdown-menu {
+                width: calc(100% + 1px);
+            }
+
+            &:last-child {
+                .dropdown-toggle {
+                    border-right: 1px solid $primary;
+                }
+
+                .dropdown-menu {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filters-row {
+        .filter-block {
+            width: 100%;
+
+            &.dropdown {
+                .dropdown-toggle {
+                    border-right: 1px solid $primary;
+                    border-bottom: 0;
+                }
+            }
+            
+            &:last-child {
+                &.dropdown {
+                    .dropdown-toggle {
+                        border-bottom: 1px solid $primary;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.slider {
+    .slick-slide {
+        margin-bottom: 0;
+    }
+    
+    .slider-arrow {
+        cursor: pointer;
+        position: absolute;
+        
+        top: calc(50% - 24px);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 48px;
+        height: 48px;
+
+        background: #fff;
+        border-radius: 50%;
+
+        box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.15);
+
+        z-index: 1;
+        transition: 0.2s ease;
+
+        &.prev {
+            left: calc(-24px + 7.5px);
+        }
+
+        &.next {
+            right: calc(-24px + 5px);
+        }
+
+        &.slick-disabled {
+            opacity: 0.85;
+        }
+
+        &:hover {
+            .icon {
+                background: $secondary;
+            }
+
+            box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

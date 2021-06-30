@@ -1,0 +1,34 @@
+section.about-hero {
+    width: 100%;
+    height: 720px;
+
+    .about-hero-background {
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: center bottom;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section.about-hero {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    section.about-hero {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    section.about-hero {
+        height: 600px;
+    }
+}

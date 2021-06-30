@@ -1,0 +1,12 @@
+{
+  "name": "globarch",
+  "version": "1.0.0",
+  "description": "website is developed by palaj / extelasoft.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass ./assets/styles/styles.scss ./assets/styles/styles.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

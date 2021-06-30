@@ -1,0 +1,43 @@
+.client-block {
+    margin: 0 7.5px;
+    margin-bottom: 40px;
+
+    a {
+        display: flex;
+
+        img {
+            height: 60px;
+            max-width: 100%;
+            
+            object-fit: contain;
+            object-position: center;
+
+            filter: grayscale(1);
+            
+            transition: 0.2s ease;
+        }
+        
+        &:hover {
+            img {
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .client-block {
+        &.col-1 {
+            margin: 0 0 20px 0;
+            padding: 0 10px;
+
+            &:nth-last-child(-n + 12) {
+                margin: 0 0 20px 0;
+            }
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

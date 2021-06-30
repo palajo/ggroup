@@ -1,0 +1,114 @@
+.service-block {
+    margin: 0 7.5px;
+    padding: 25px;
+    border: 1px solid $primary;
+    margin-bottom: 15px;
+
+    .service-block-title {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        margin-bottom: 15px;
+
+        font-size: 20px;
+        line-height: 24px;
+
+        font-weight: 500;
+        text-transform: uppercase;
+
+        img {
+            height: 60px;
+            margin-right: 20px;
+        }
+    }
+    
+    .service-block-description {
+        margin-top: 15px;
+    }
+
+    .service-block-more {
+        margin-top: 25px;
+
+        a {
+            position: relative;
+            display: inline-block;
+
+            width: 100%;
+            text-transform: lowercase;
+
+            transition: 0.2s ease;
+
+            div {
+                width: fit-content;
+                background: #fff;
+
+                padding-right: 20px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                
+                top: 50%;
+                left: 0;
+
+                width: 50%;
+                height: 1px;
+                
+                background: $primary;
+                z-index: -1;
+
+                transition: width 0.3s ease;
+            }
+
+            &:hover {
+                color: $secondary;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .service-block {
+        margin: 0 0 10px 0;
+
+        &:nth-last-child(-n + 4) {
+            margin: 0 0 10px 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .service-block {        
+        margin: 0 7.5px 15px 7.5px;
+
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .service-block {
+        .service-block-title {
+            font-size: 18px;
+            line-height: 24px;
+
+            word-wrap: pre-wrap;
+    
+            img {
+                height: 50px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
