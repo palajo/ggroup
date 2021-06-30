@@ -1,5 +1,23 @@
 <?php
-/* enqueue styles and js */
+
+// theme support
+add_theme_support( 'menus' );
+
+
+// activate Options Tab for ACF
+if (function_exists('acf_add_options_page')) {
+	acf_add_options_page();
+}
+
+
+// Bootstrap NavWalker
+function register_navwalker(){
+	require_once get_template_directory() . '/includes/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+
+// enqueue styles and js
 function theme_scripts() {
     // styles
     wp_enqueue_style('slick-css', get_theme_file_uri('/assets/styles/slick.css'), array(), '1.8.1');

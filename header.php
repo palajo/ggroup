@@ -13,8 +13,8 @@
                     <div class="col-12">
                         <div class="left-block">
                             <div class="logo">
-                                <a href="/">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="Globarch Group Logo" />
+                                <a href="<?php echo home_url(); ?>">
+                                    <img src="<?php echo get_field('globarch_logo', 'option')['url']; ?>" />
                                 </a>
                             </div>
                         </div>
@@ -26,38 +26,18 @@
                             </div>
                         </div>
                         <div class="right-block">
-                            <ul class="nav main-nav">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Architecture planning
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Residental interior design
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Furniture design
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Commercial design
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        About us
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Contacts
-                                    </a>
-                                </li>
-                            </ul>
+                            <?php 
+                                wp_nav_menu( 
+                                    array(
+                                        'menu'              => 'Primary menu',
+                                        'depth'             => 1,
+                                        'container'         => false,
+                                        'menu_class'        => 'nav main-nav',
+                                        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                                        'walker'            => new WP_Bootstrap_Navwalker(),
+                                    ) 
+                                );
+                            ?>
                             <div class="dropdown language-switcher-dropdown">
                                 <a class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     en
