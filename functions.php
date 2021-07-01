@@ -2,12 +2,34 @@
 
 // theme support
 add_theme_support( 'menus' );
+add_theme_support( 'post-thumbnails' ); 
 
 
 // activate Options Tab for ACF
 if (function_exists('acf_add_options_page')) {
 	acf_add_options_page();
 }
+
+
+// custom post types
+flush_rewrite_rules( true );
+
+function create_posttype() {
+    register_post_type( 'projects',
+        array(
+            'labels' => array(
+                'name' => __( 'Projects' ),
+                'singular_name' => __( 'Project' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'projects'),
+            'show_in_rest' => true,
+            'supports' => array('title', 'thumbnail')
+        )
+    );
+}
+add_action( 'init', 'create_posttype' );
 
 
 // Bootstrap NavWalker

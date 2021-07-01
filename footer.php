@@ -1,19 +1,27 @@
         </main>
         <footer>
+            <?php
+                $social = get_field('social_media', 'option');
+                $contacts = get_field('contacts', 'option');
+            ?>
             <div class="container">
                 <div class="row">
                     <div class="col-4 left-block">
                         <ul class="nav flex-column white">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <?php echo get_field('footer_contacts_address', 'option'); ?>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="mailto:<?php echo get_field('footer_contacts_email', 'option'); ?>" class="nav-link">
-                                    <?php echo get_field('footer_contacts_email', 'option'); ?>
-                                </a>
-                            </li>
+                            <?php if($contacts['footer_contacts_address']): ?>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <?php echo $contacts['footer_contacts_address']; ?>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                            <?php if($contacts['footer_contacts_email']): ?>
+                                <li class="nav-item">
+                                    <a href="mailto:<?php echo $contacts['footer_contacts_email']; ?>" class="nav-link">
+                                        <?php echo $contacts['footer_contacts_email']; ?>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
                         </ul>
                         <div class="leadbranding">
                             <a href="#">Crafted by <img src="<?php echo get_template_directory_uri(); ?>/assets/images/leadbranding-white.svg" alt="leadbranding.net / logo" /></a>
@@ -32,25 +40,27 @@
                                     Contacts
                                 </a>
                             </div>
-                            <?php
-                                $behance = get_field('footer_social_behance', 'option');
-                                $facebook = get_field('footer_social_facebook', 'option');
-                                $instagram = get_field('footer_social_instagram', 'option');
-                                $youtube = get_field('footer_social_youtube', 'option');
-                            ?>
                             <div class="get-in-touch-social">
-                                <a href="<?php echo $behance['url']; ?>" target="<?php echo $behance['target'] ?>">
-                                    <div class="icon white behance"></div>
-                                </a>
-                                <a href="<?php echo $facebook['url'] ?>" target="<?php echo $facebook['target'] ?>">
-                                    <div class="icon white facebook"></div>
-                                </a>
-                                <a href="<?php echo $instagram['url'] ?>" target="<?php echo $instagram['target'] ?>">
-                                    <div class="icon white instagram"></div>
-                                </a>
-                                <a href="<?php echo $youtube['url'] ?>" target="<?php echo $youtube['target'] ?>">
-                                    <div class="icon white youtube"></div>
-                                </a>
+                                <?php if($social['footer_social_behance']): ?>
+                                    <a href="<?php echo $social['footer_social_behance']['url'] ?>" target="<?php echo $social['footer_social_behance']['target'] ?>">
+                                        <div class="icon white behance"></div>
+                                    </a>
+                                <?php endif; ?>
+                                <?php if($social['footer_social_facebook']): ?>
+                                    <a href="<?php echo $social['footer_social_facebook']['url'] ?>" target="<?php echo $social['footer_social_facebook']['target'] ?>">
+                                        <div class="icon white facebook"></div>
+                                    </a>
+                                <?php endif; ?>
+                                <?php if($social['footer_social_instagram']): ?>
+                                    <a href="<?php echo $social['footer_social_instagram']['url'] ?>" target="<?php echo $social['footer_social_instagram']['target'] ?>">
+                                        <div class="icon white instagram"></div>
+                                    </a>
+                                <?php endif; ?>
+                                <?php if($social['footer_social_youtube']): ?>
+                                    <a href="<?php echo $social['footer_social_youtube']['url'] ?>" target="<?php echo $social['footer_social_youtube']['target'] ?>">
+                                        <div class="icon white youtube"></div>
+                                    </a>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
