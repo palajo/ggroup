@@ -1,4 +1,4 @@
-<div class="slider other-projects-slider">
+<div class="slider projects-slider">
     <?php 
         $loop = new WP_Query(array(
             'post_type' => 'projects',
@@ -18,6 +18,13 @@
                 <div class="project-title-title">
                     <a href="<?php the_permalink(); ?>" class="nav-link">
                         <?php the_title(); ?>
+                    </a>
+                </div>
+                <div class="project-title-more">
+                    <a href="<?php the_permalink(); ?>">
+                        <div>
+                            View more
+                        </div>
                     </a>
                 </div>
             </div>

@@ -14,11 +14,11 @@
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <?php if (have_rows('section_project_profile')): ?>
+    <?php if (have_rows('section_project_profile')): ?>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
                         <table class="project-profile">
                             <tbody>
                                 <?php while (have_rows('section_project_profile')): the_row(); ?>
@@ -33,16 +33,16 @@
                                 <?php endwhile; ?>
                             </tbody>
                         </table>
-                    <?php endif; ?>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <?php if (have_rows('project_navigation')): ?>
+        </section>
+    <?php endif; ?>
+    <?php if (have_rows('project_navigation')): ?>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
                         <ul class="nav project-navigation">
                             <?php while (have_rows('project_navigation')): the_row(); ?>
                                 <li class="nav-item">
@@ -52,11 +52,11 @@
                                 </li>
                             <?php endwhile; ?>
                         </ul>
-                    <?php endif; ?>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endif; ?>
     <section class="section" id="about">
         <?php 
             $descriptions = get_field('project_about_descriptions');
@@ -320,8 +320,8 @@
                     <h2 class="section-title">
                         <?php echo get_field('section_other_projects_title'); ?>
                     </h2>
-                    <?php get_template_part( 'template-parts/slider/slider-other-projects' ); ?>
-                    <a href="<?php echo get_field('section_other_projects_button')['url']; ?>" target="<?php echo get_field('section_other_projects_button')['target']; ?>">
+                    <?php get_template_part( 'template-parts/sliders/slider-other-projects' ); ?>
+                    <a href="<?php echo get_post_type_archive_link('projects'); ?>" target="<?php echo get_field('section_other_projects_button')['target']; ?>">
                         <button class="button">
                             <?php echo get_field('section_other_projects_button')['title']; ?>
                         </button>

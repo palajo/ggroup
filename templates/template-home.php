@@ -115,85 +115,44 @@
                         Projects
                     </h2>
                     <div class="blocks-row mainpage-projects-slider">
-                        <div class="col-md-12 col-lg-6 project-block">
-                            <div class="project-image">
-                                <img src={ProjectImage1} alt="Globarch Project 1" />
-                            </div>
-                            <div class="project-title">
-                                <div class="project-title-title">
-                                    <a href="/projects/villa-kuzmina" class="nav-link">
-                                        Villa Kuzmina
+                        <?php 
+                            $loop = new WP_Query(array(
+                                'post_type' => 'projects',
+                                'posts_per_page' => 4
+                            ));
+
+                            if ($loop->have_posts()):
+                                while ($loop->have_posts()):
+                                    $loop->the_post();
+                        ?>
+                            <div class="col-md-12 col-lg-6 project-block">
+                                <div class="project-image">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php the_post_thumbnail(); ?>
                                     </a>
                                 </div>
-                                <div class="project-title-more">
-                                    <a href="/projects/villa-kuzmina">
-                                        <div>
-                                            View more
-                                        </div>
-                                    </a>
+                                <div class="project-title">
+                                    <div class="project-title-title">
+                                        <a href="<?php the_permalink(); ?>" class="nav-link">
+                                            <?php the_title(); ?>
+                                        </a>
+                                    </div>
+                                    <div class="project-title-more">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <div>
+                                                View more
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 project-block">
-                            <div class="project-image">
-                                <img src={ProjectImage2} alt="Globarch Project 2" />
-                            </div>
-                            <div class="project-title">
-                                <div class="project-title-title">
-                                    <a href="/projects/villa-kuzmina" class="nav-link">
-                                        Villa Kuzmina
-                                    </a>
-                                </div>
-                                <div class="project-title-more">
-                                    <a href="/projects/villa-kuzmina">
-                                        <div>
-                                            View more
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 project-block">
-                            <div class="project-image">
-                                <img src={ProjectImage3} alt="Globarch Project 3" />
-                            </div>
-                            <div class="project-title">
-                                <div class="project-title-title">
-                                    <a href="/projects/villa-kuzmina" class="nav-link">
-                                        Villa Kuzmina
-                                    </a>
-                                </div>
-                                <div class="project-title-more">
-                                    <a href="/projects/villa-kuzmina">
-                                        <div>
-                                            View more
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6 project-block">
-                            <div class="project-image">
-                                <img src={ProjectImage4} alt="Globarch Project 4" />
-                            </div>
-                            <div class="project-title">
-                                <div class="project-title-title">
-                                    <a href="/projects/villa-kuzmina" class="nav-link">
-                                        Villa Kuzmina
-                                    </a>
-                                </div>
-                                <div class="project-title-more">
-                                    <a href="/projects/villa-kuzmina">
-                                        <div>
-                                            View more
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                                endwhile;
+                            endif;
+                        ?>
                     </div>
                     <div class="section-button">
-                        <a href="/projects">
+                        <a href="<?php echo get_post_type_archive_link('projects'); ?>">
                             <button class="button">
                                 View all projects
                             </button>
