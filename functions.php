@@ -30,3 +30,8 @@ function theme_scripts() {
     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0.0');
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
+
+
+// dequeue CF7 styles and js
+add_filter( 'wpcf7_load_js', '__return_false' );
+add_filter( 'wpcf7_load_css', '__return_false' );
