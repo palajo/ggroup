@@ -17,6 +17,15 @@ jQuery(document).ready(function ($) {
     };
 
     $(document).ready(function() {
+        // load background for hero banners
+        $('.main-hero').each(function () {
+            if ($(this).attr("data-bg")) {
+                $(this).css({
+                    'background-image': 'url(' + $(this).data('bg') + ')'
+                });
+            };
+        });
+
         // dropdown for language swticher
         $('.dropdown').on('mouseenter',function(){
             $(this).find('.dropdown-menu').fadeIn(200);
@@ -131,5 +140,4 @@ jQuery(document).ready(function ($) {
         // enable or disable mainpage projects slider on window width change
         mainpageProjectsSlider();
     });
-
 });

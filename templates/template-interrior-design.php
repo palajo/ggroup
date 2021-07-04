@@ -4,108 +4,115 @@
         <div class="container-fluid p-0">
             <div class="project-hero-title">
                 <h1 class="project-hero-title-title">
-                    VILLA KUZMINA
+                    <?php echo get_field('hero_title'); ?>
                 </h1>
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                </p>
+                <?php echo get_field('hero_description', false); ?>
             </div>
             <div class="project-hero-background">
-                <img src={InterriorImage1} alt="Villa Kuzmina Main" />
+                <img src="<?php echo get_field('hero_image')['url']; ?>" alt="<?php echo get_field('hero_image')['alt']; ?>" />
             </div>
         </div>
     </section> 
-    <section class="section">
+    <section class="section double-padding gray">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <ul class="benefits-list">
-                        <li>
-                            The need to scale very fast to achieve the set goals
-                        </li>
-                        <li>
-                            Taxes, insurance, and other extra expenses, which come along with extra in-house teams
-                        </li>
-                        <li>
-                            The need to expand technical expertise
-                        </li>
-                        <li>
-                            Expensive rent and additional costs associated with location
-                        </li>
-                        <li>
-                            Overheated domestic market and incredible competition for resources
-                        </li>
-                    </ul>
+                    <?php if (get_field('advantages_title')): ?>
+                        <h2 class="section-title text-center">
+                            <?php echo get_field('advantages_title'); ?>
+                        </h2>
+                    <?php endif; ?>
+                    <?php if (have_rows('advantages_puncts')): ?>
+                        <ul class="benefits-list">
+                            <?php while (have_rows('advantages_puncts')): the_row(); ?>
+                                <li>
+                                    <?php echo get_sub_field('advantage_text'); ?>
+                                </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
     </section>
-    <SectionContact />
+    <?php get_template_part( 'template-parts/sections/section-contact' ); ?>
     <section class="section">
+        <?php 
+            $descriptions = get_field('content_descriptions');
+            $gallery = get_field('content_gallery');
+        ?>
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="section-title">
-                        Housing and apartments
+                        <?php echo get_field('content_title'); ?>
                     </h2>
-                    <p class="text-start text-md-center">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
-                    </p>
+                    <?php echo $descriptions['description_1']; ?>
                 </div>
             </div>
         </div>
         <div class="project-gallery">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 image-height-800">
-                        <img src={InterriorImage2} alt="Villa Kuzmina" />
-                    </div>
+                    <?php if ($gallery['image_1']): ?>
+                        <div class="col-12 image-height-800">
+                            <img src="<?php echo $gallery['image_1']['url']; ?>" alt="<?php echo $gallery['image_1']['alt']; ?>" />
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-4 project-gallery-block image-height-700">
-                        <img src={InterriorImage3} alt="Villa Kuzmina" />
-                    </div>
-                    <div class="col-4 project-gallery-block image-height-700">
-                        <img src={InterriorImage4} alt="Villa Kuzmina" />
-                    </div>
-                    <div class="col-4 project-gallery-block image-height-700">
-                        <img src={InterriorImage5} alt="Villa Kuzmina" />
-                    </div>
+                    <?php if ($gallery['image_2']): ?>
+                        <div class="col-4 project-gallery-block image-height-700">
+                            <img src="<?php echo $gallery['image_2']['url']; ?>" alt="<?php echo $gallery['image_2']['alt']; ?>" />
+                        </div>
+                    <?php endif; ?>
+                    <?php if ($gallery['image_3']): ?>
+                        <div class="col-4 project-gallery-block image-height-700">
+                            <img src="<?php echo $gallery['image_3']['url']; ?>" alt="<?php echo $gallery['image_3']['alt']; ?>" />
+                        </div>
+                    <?php endif; ?>
+                    <?php if ($gallery['image_4']): ?>
+                        <div class="col-4 project-gallery-block image-height-700">
+                            <img src="<?php echo $gallery['image_4']['url']; ?>" alt="<?php echo $gallery['image_4']['alt']; ?>" />
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <p class="text-start text-md-center">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam .
-                    </p>
+                    <?php echo $descriptions['description_2']; ?>
                 </div>
             </div>
         </div>
         <div class="project-gallery">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 project-gallery-block image-height-500">
-                        <img src={InterriorImage6} alt="Villa Kuzmina" />
-                    </div>
-                    <div class="col-6 project-gallery-block image-height-500">
-                        <img src={InterriorImage7} alt="Villa Kuzmina" />
-                    </div>
+                    <?php if ($gallery['image_5']): ?>
+                        <div class="col-6 project-gallery-block image-height-500">
+                            <img src="<?php echo $gallery['image_5']['url']; ?>" alt="<?php echo $gallery['image_5']['alt']; ?>" />
+                        </div>
+                    <?php endif; ?>
+                    <?php if ($gallery['image_6']): ?>
+                        <div class="col-6 project-gallery-block image-height-500">
+                            <img src="<?php echo $gallery['image_6']['url']; ?>" alt="<?php echo $gallery['image_6']['alt']; ?>" />
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <p class="text-start text-md-center">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam .
-                    </p>
-                    <button class="button mt-30px">
-                        Contact us
-                    </button>
+                    <?php echo $descriptions['description_3']; ?>
+                    <a href="<?php echo get_field('content_link')['url']; ?>" target="<?php echo get_field('content_link')['target']; ?>">
+                        <button class="button mt-30px">
+                            <?php echo get_field('content_link')['title']; ?>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -117,193 +124,11 @@
                     <h2 class="section-title text-center text-md-start">
                         Our projects
                     </h2>
-                    <div class="slider projects-slider">
-                        <div class="project-block">
-                            <div class="project-image">
-                                <img src="#" alt="Globarch Project 1" />
-                            </div>
-                            <div class="project-title">
-                                <div class="project-title-title">
-                                    <a href="/projects/villa-kuzmina" class="nav-link">
-                                        Villa Kuzmina
-                                    </a>
-                                </div>
-                                <div class="project-title-more">
-                                    <a href="/projects/villa-kuzmina">
-                                        <div>
-                                            View more
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-block">
-                            <div class="project-image">
-                                <img src="#" alt="Globarch Project 1" />
-                            </div>
-                            <div class="project-title">
-                                <div class="project-title-title">
-                                    <a href="/projects/villa-kuzmina" class="nav-link">
-                                        Villa Kuzmina
-                                    </a>
-                                </div>
-                                <div class="project-title-more">
-                                    <a href="/projects/villa-kuzmina">
-                                        <div>
-                                            View more
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-block">
-                            <div class="project-image">
-                                <img src="#" alt="Globarch Project 1" />
-                            </div>
-                            <div class="project-title">
-                                <div class="project-title-title">
-                                    <a href="/projects/villa-kuzmina" class="nav-link">
-                                        Villa Kuzmina
-                                    </a>
-                                </div>
-                                <div class="project-title-more">
-                                <a href="/projects/villa-kuzmina">
-                                        <div>
-                                            View more
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-block">
-                            <div class="project-image">
-                                <img src="#" alt="Globarch Project 1" />
-                            </div>
-                            <div class="project-title">
-                                <div class="project-title-title">
-                                    <a href="/projects/villa-kuzmina" class="nav-link">
-                                        Villa Kuzmina
-                                    </a>
-                                </div>
-                                <div class="project-title-more">
-                                    <a href="/projects/villa-kuzmina">
-                                        <div>
-                                            View more
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-block">
-                            <div class="project-image">
-                                <img src="#" alt="Globarch Project 1" />
-                            </div>
-                            <div class="project-title">
-                                <div class="project-title-title">
-                                    <a href="/projects/villa-kuzmina" class="nav-link">
-                                        Villa Kuzmina
-                                    </a>
-                                </div>
-                                <div class="project-title-more">
-                                    <a href="/projects/villa-kuzmina">
-                                        <div>
-                                            View more
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-block">
-                            <div class="project-image">
-                                <img src="#" alt="Globarch Project 1" />
-                            </div>
-                            <div class="project-title">
-                                <div class="project-title-title">
-                                    <a href="/projects/villa-kuzmina" class="nav-link">
-                                        Villa Kuzmina
-                                    </a>
-                                </div>
-                                <div class="project-title-more">
-                                    <a href="/projects/villa-kuzmina">
-                                        <div>
-                                            View more
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php get_template_part( 'template-parts/sliders/slider-projects' ); ?>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section" id="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="section-title text-center text-md-start">
-                        Our clients
-                    </h2>
-                    <div class="blocks-row">
-                        <div class="col-1 client-block">
-                            <a href="#">
-                                <img src="#" alt="Globarch Client 1" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-10 col-xl-8 col-xxl-6 contact-form">
-                    <h3 class="bold">
-                        Are you interested in construction with us?
-                    </h3>
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
-                    </p>
-                    <form>
-                        <div class="form-row">
-                            <div class="form-block">
-                                <label>Name</label>
-                                <input type="text" class="text-input" />
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-block">
-                                <label>Phone number</label>
-                                <input type="text" class="text-input" />
-                            </div>
-                            <div class="form-block">
-                                <label>E-mail</label>
-                                <input type="email" class="text-input" />
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-block">
-                                <div class="checkbox-input">
-                                    <input type="checkbox" id="checkbox-input" />
-                                    <label htmlFor="checkbox-input">
-                                        I agree that the company: Globarch Group, will process my personal data for the customer relationship records (name, surname, e-mail and phone number). *
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="button" type="submit">
-                            Send message
-                        </button>
-                    </form>
-                    <div class="contacts-phone">
-                        <a href="#">
-                            <span>or call</span>
-                            +38 099 98 47 911
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php get_template_part( 'template-parts/sections/section-clients' ); ?>
+    <?php get_template_part( 'template-parts/sections/section-contact' ); ?>
 <?php get_footer(); ?>

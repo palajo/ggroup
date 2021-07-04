@@ -1,30 +1,41 @@
 <?php /* Template Name: Homepage Template */ ?>
 <?php get_header(); ?>
-    <section class="main-hero">
+    <section class="main-hero" data-bg="<?php echo get_field('hero_background')['url']; ?>">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-xxl-5">
                     <div class="main-hero-content">
                         <h1 class="main-hero-title">
-                            LOREM IPSUM
+                            <?php echo get_field('hero_title'); ?>
                         </h1>
-                        <button class="button">
-                            View all services
-                        </button>
+                        <?php echo get_field('hero_description', false); ?>
+                        <a href="<?php echo get_field('hero_button')['url']; ?>" target="<?php echo get_field('hero_button')['target']; ?>">
+                            <button class="button">
+                                <?php echo get_field('hero_button')['title']; ?>
+                            </button>
+                        </a>
                     </div>
                     <div class="main-hero-social">
-                        <a href="#">
-                            <div class="icon white behance"></div>
-                        </a>
-                        <a href="#">
-                            <div class="icon white facebook"></div>
-                        </a>
-                        <a href="#">
-                            <div class="icon white instagram"></div>
-                        </a>
-                        <a href="#">
-                            <div class="icon white youtube"></div>
-                        </a>
+                        <?php if($social['footer_social_behance']): ?>
+                            <a href="<?php echo $social['footer_social_behance']['url'] ?>" target="<?php echo $social['footer_social_behance']['target'] ?>">
+                                <div class="icon white behance"></div>
+                            </a>
+                        <?php endif; ?>
+                        <?php if($social['footer_social_facebook']): ?>
+                            <a href="<?php echo $social['footer_social_facebook']['url'] ?>" target="<?php echo $social['footer_social_facebook']['target'] ?>">
+                                <div class="icon white facebook"></div>
+                            </a>
+                        <?php endif; ?>
+                        <?php if($social['footer_social_instagram']): ?>
+                            <a href="<?php echo $social['footer_social_instagram']['url'] ?>" target="<?php echo $social['footer_social_instagram']['target'] ?>">
+                                <div class="icon white instagram"></div>
+                            </a>
+                        <?php endif; ?>
+                        <?php if($social['footer_social_youtube']): ?>
+                            <a href="<?php echo $social['footer_social_youtube']['url'] ?>" target="<?php echo $social['footer_social_youtube']['target'] ?>">
+                                <div class="icon white youtube"></div>
+                            </a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -35,74 +46,30 @@
             <div class="row">
                 <div class="col-12">
                     <h2 class="section-title text-center text-md-start">
-                        Services
+                        <?php echo get_field('services_title'); ?>
                     </h2>
-                    <div class="blocks-row">
-                        <div class="col-md-6 col-lg-6 col-xl-3 service-block">
-                            <div class="service-block-title">
-                                <img src={ServiceBlockIcon1} alt=" Architecture planning icon" />
-                                Architecture planning
-                            </div>
-                            <div class="service-block-description">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
-                            </div>
-                            <div class="service-block-more">
-                                <a href="#">
-                                    <div>
-                                        View more
+                    <?php if (have_rows('services_blocks')): ?>
+                        <div class="blocks-row">
+                            <?php while (have_rows('services_blocks')): the_row(); ?>
+                                <div class="col-md-6 col-lg-6 col-xl-3 service-block">
+                                    <div class="service-block-title">
+                                        <img src="<?php echo get_sub_field('block_icon')['url']; ?>" alt="<?php echo get_sub_field('block_icon')['alt']; ?>" />
+                                        <?php echo get_sub_field('block_title'); ?>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3 service-block">
-                            <div class="service-block-title">
-                                <img src={ServiceBlockIcon2} alt=" Architecture planning icon" />
-                                Residental interior design
-                            </div>
-                            <div class="service-block-description">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
-                            </div>
-                            <div class="service-block-more">
-                                <a href="#">
-                                    <div>
-                                        View more
+                                    <div class="service-block-description">
+                                        <?php echo the_sub_field('block_description', false, false); ?>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3 service-block">
-                            <div class="service-block-title">
-                                <img src={ServiceBlockIcon3} alt=" Architecture planning icon" />
-                                Commercial design
-                            </div>
-                            <div class="service-block-description">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
-                            </div>
-                            <div class="service-block-more">
-                                <a href="#">
-                                    <div>
-                                        View more
+                                    <div class="service-block-more">
+                                        <a href="<?php echo get_sub_field('block_link')['url']; ?>" target="<?php echo get_sub_field('block_link')['target']; ?>">
+                                            <div>
+                                                <?php echo get_sub_field('block_link')['title']; ?>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            <?php endwhile; ?>
                         </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3 service-block">
-                            <div class="service-block-title">
-                                <img src={ServiceBlockIcon4} alt=" Architecture planning icon" />
-                                Furniture design
-                            </div>
-                            <div class="service-block-description">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
-                            </div>
-                            <div class="service-block-more">
-                                <a href="#">
-                                    <div>
-                                        View more
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

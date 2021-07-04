@@ -73,6 +73,18 @@ a.nav-link {
 
 ul.nav {
     li.nav-item {
+        &.active {
+            a.nav-link {
+                &::after {
+                    width: 100%;
+                }
+                &:hover {
+                    &::after {
+                        width: 50%;
+                    }
+                }
+            }
+        }
 
         &:first-child {
             a.nav-link {

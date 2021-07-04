@@ -7574,6 +7574,12 @@ a.nav-link {
       vertical-align: auto;
       border: 0; }
 
+ul.nav li.nav-item.active a.nav-link::after {
+  width: 100%; }
+
+ul.nav li.nav-item.active a.nav-link:hover::after {
+  width: 50%; }
+
 ul.nav li.nav-item:first-child a.nav-link {
   padding-left: 0; }
 
@@ -9760,10 +9766,10 @@ ul.benefits-list {
       height: 30px;
       margin-right: 30px;
       background: #292B2D;
-      mask: url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 16.5L13.75 24.75L27.5 8.25' stroke='%23151414' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-      mask-size: contain;
-      mask-position: center;
-      mask-repeat: no-repeat; }
+      -webkit-mask: url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 16.5L13.75 24.75L27.5 8.25' stroke='%23151414' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      -webkit-mask-size: contain;
+      -webkit-mask-position: center;
+      -webkit-mask-repeat: no-repeat; }
 
 section.four-blocks .section-title {
   margin-left: 100px; }
