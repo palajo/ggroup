@@ -1,46 +1,58 @@
 <?php /* Template Name: Contacts Template */ ?>
 <?php get_header(); ?>
     <section class="section section-contacts">
+        <?php 
+            $contacts = get_field('contacts_contacts');
+            $social = get_field('contacts_social');
+        ?>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-5">
                     <h1 class="section-title">
-                        Contacts
+                        <?php echo get_field('contacts_title'); ?>
                     </h1>
                     <div>
                         <h3 class="bold">
-                            Globarch Group
+                            <?php echo get_field('contacts_company_name'); ?>
                         </h3>
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    Lviv, street Basarab, 3
+                                    <?php echo $contacts['address']; ?>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    globarch.info@gmail.com
+                                <a href="mailto:<?php echo $contacts['email']; ?>" class="nav-link">
+                                    <?php echo $contacts['email']; ?>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    +38 099 98 47 911
+                                <a href="tel:<?php echo $contacts['phone']; ?>" class="nav-link">
+                                    <?php echo $contacts['phone']; ?>
                                 </a>
                             </li>
                         </ul>
                         <div class="get-in-touch-social">
-                            <a href="#">
-                                <div class="icon behance"></div>
-                            </a>
-                            <a href="#">
-                                <div class="icon facebook"></div>
-                            </a>
-                            <a href="#">
-                                <div class="icon instagram"></div>
-                            </a>
-                            <a href="#">
-                                <div class="icon youtube"></div>
-                            </a>
+                            <?php if($social['behance']): ?>
+                                <a href="<?php echo $social['behance']['url'] ?>" target="<?php echo $social['behance']['target'] ?>">
+                                    <div class="icon behance"></div>
+                                </a>
+                            <?php endif; ?>
+                            <?php if($social['facebook']): ?>
+                                <a href="<?php echo $social['facebook']['url'] ?>" target="<?php echo $social['facebook']['target'] ?>">
+                                    <div class="icon facebook"></div>
+                                </a>
+                            <?php endif; ?>
+                            <?php if($social['instagram']): ?>
+                                <a href="<?php echo $social['instagram']['url'] ?>" target="<?php echo $social['instagram']['target'] ?>">
+                                    <div class="icon instagram"></div>
+                                </a>
+                            <?php endif; ?>
+                            <?php if($social['youtube']): ?>
+                                <a href="<?php echo $social['youtube']['url'] ?>" target="<?php echo $social['youtube']['target'] ?>">
+                                    <div class="icon youtube"></div>
+                                </a>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -50,55 +62,5 @@
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-10 col-xl-8 col-xxl-6 contact-form">
-                    <h3 class="bold">
-                        Are you interested in construction with us?
-                    </h3>
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam ...
-                    </p>
-                    <form>
-                        <div class="form-row">
-                            <div class="form-block">
-                                <label>Name</label>
-                                <input type="text" class="text-input" />
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-block">
-                                <label>Phone number</label>
-                                <input type="text" class="text-input" />
-                            </div>
-                            <div class="form-block">
-                                <label>E-mail</label>
-                                <input type="email" class="text-input" />
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-block">
-                                <div class="checkbox-input">
-                                    <input type="checkbox" id="checkbox-input" />
-                                    <label htmlFor="checkbox-input">
-                                        I agree that the company: Globarch Group, will process my personal data for the customer relationship records (name, surname, e-mail and phone number). *
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="button" type="submit">
-                            Send message
-                        </button>
-                    </form>
-                    <div class="contacts-phone">
-                        <a href="#">
-                            <span>or call</span>
-                            +38 099 98 47 911
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php get_template_part( 'template-parts/sections/section-contact' ); ?>
 <?php get_footer(); ?>

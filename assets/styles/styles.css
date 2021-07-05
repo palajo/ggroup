@@ -8113,6 +8113,7 @@ footer {
         text-transform: lowercase;
         letter-spacing: 2px; }
         footer .left-block .leadbranding a img {
+          height: 30px;
           margin-left: 10px;
           transition: 0.2s ease; }
         footer .left-block .leadbranding a:hover {
@@ -9619,6 +9620,9 @@ section.about-information {
   section.about-information .container {
     position: relative;
     padding-right: 120px; }
+    section.about-information .container p {
+      font-size: 18px;
+      line-height: 30px; }
     section.about-information .container .slogan {
       position: absolute;
       top: 0;

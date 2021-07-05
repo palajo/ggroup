@@ -24,7 +24,7 @@
                             <?php endif; ?>
                         </ul>
                         <div class="leadbranding">
-                            <a href="#">Crafted by <img src="<?php echo get_template_directory_uri(); ?>/assets/images/leadbranding-white.svg" alt="leadbranding.net / logo" /></a>
+                            <a href="#">Crafted by <img src="<?php echo get_template_directory_uri(); ?>/assets/images/extelasoft-logo-icon-white.svg" alt="leadbranding.net / logo" /></a>
                         </div>
                     </div>
                     <div class="col-4 middle-block">

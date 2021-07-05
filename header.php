@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png" type="image/png">
+        <title><?php wp_title(); ?></title>
         <?php wp_head(); ?>
     </head>
     <body>
@@ -61,9 +62,9 @@
                                 </ul>
                             </div>
                             <div class="contacts-phone">
-                                <a href="#">
-                                    <span>or call</span>
-                                    +38 099 98 47 911
+                                <a href="tel:<?php echo get_field('header_phone', 'option'); ?>">
+                                    <span><?php echo get_field('header_phone_small_text', 'option'); ?></span>
+                                    <?php echo get_field('header_phone', 'option'); ?>
                                 </a>
                             </div>
                         </div>
