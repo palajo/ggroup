@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
             $('.mainpage-projects-slider').not('.slick-initialized').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                infinite: true,
+                infinite: false,
                 arrows: false,
                 swipeToSlide: true,
                 mobileFirst: true,
@@ -49,7 +49,7 @@ jQuery(document).ready(function ($) {
         $('.other-projects-slider').not('.slick-initialized').slick({
             slidesToShow: 2,
             slidesToScroll: 1,
-            infinite: true,
+            infinite: false,
             arrows: true,
             swipeToSlide: true,
             prevArrow:'<div class="slider-arrow prev"><div class="icon arrow-left"></div></div>',
@@ -70,9 +70,10 @@ jQuery(document).ready(function ($) {
         $('.projects-slider').not('.slick-initialized').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
-            infinite: true,
+            infinite: false,
             arrows: true,
             swipeToSlide: true,
+            centerMode: false,
             prevArrow:'<div class="slider-arrow prev"><div class="icon arrow-left"></div></div>',
             nextArrow:'<div class="slider-arrow next"><div class="icon arrow-right"></div></div>',
             responsive: [
@@ -99,7 +100,7 @@ jQuery(document).ready(function ($) {
             slidesToShow: 6,
             slidesToScroll: 1,
 
-            infinite: true,
+            infinite: false,
             arrows: true,
             swipeToSlide: true,
             prevArrow:'<div class="slider-arrow prev"><div class="icon arrow-left"></div></div>',

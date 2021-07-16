@@ -9,6 +9,10 @@
             height: 300px;
         }
     }
+
+    .slick-track {
+        min-width: 100%;
+    }
 }
 
 @media screen and (max-width: 767px) {

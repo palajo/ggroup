@@ -33,7 +33,7 @@
                             <ul class="dropdown-menu">
                                 <?php
                                     $args = array(
-                                        'taxonomy' => 'category'
+                                        'taxonomy' => 'project_category'
                                     );
 
                                     $cats = get_categories($args);
@@ -57,7 +57,7 @@
                             <ul class="dropdown-menu">
                                 <?php
                                     $args = array(
-                                        'taxonomy' => 'year'
+                                        'taxonomy' => 'project_year'
                                     );
 
                                     $cats = get_categories($args);

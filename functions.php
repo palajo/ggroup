@@ -15,7 +15,8 @@ if (function_exists('acf_add_options_page')) {
 flush_rewrite_rules( true );
 
 function create_posttype() {
-    register_taxonomy('year', 
+
+    register_taxonomy('project_year', 
         array('projects'), 
         array(
         'labels'            => array(
@@ -35,10 +36,10 @@ function create_posttype() {
         'query_var'         => true,
         'hierarchical'      => true,
         'show_admin_column' => true,
-        'rewrite'           => array('slug' => 'year')
+        'rewrite'           => array('slug' => 'projects/year')
     ));
 
-    register_taxonomy('category', 
+    register_taxonomy('project_category', 
         array('projects'), 
         array(
         'labels'            => array(
@@ -58,9 +59,9 @@ function create_posttype() {
         'query_var'         => true,
         'hierarchical'      => true,
         'show_admin_column' => true,
-        'rewrite'           => array('slug' => 'category')
+        'rewrite'           => array('slug' => 'projects/category')
     ));
-
+    
     register_post_type( 'projects',
         array(
             'labels' => array(
@@ -99,4 +100,3 @@ function theme_scripts() {
     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0.0');
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
-

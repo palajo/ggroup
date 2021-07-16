@@ -8926,6 +8926,8 @@ section.about-hero {
   margin-right: -5px; }
   .projects-slider .project-block .project-image {
     height: 300px; }
+  .projects-slider .slick-track {
+    min-width: 100%; }
 
 @media screen and (max-width: 767px) {
   section#projects .container .row .col-12 {

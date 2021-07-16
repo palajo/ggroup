@@ -1,4 +1,4 @@
-<div class="slider other-projects-slider">
+<div class="slider projects-slider">
     <?php 
         $loop = new WP_Query(array(
             'post_type' => 'projects',
@@ -7,7 +7,7 @@
                 array(
                     'taxonomy' => 'project_category',
                     'field'    => 'slug',
-                    'terms' => 'architecture-planning'
+                    'terms' => 'residential-interior-design'
                 )
             )
         ));
@@ -15,7 +15,7 @@
             while ($loop->have_posts()):
                 $loop->the_post();
     ?>
-        <div class="col-md-6 project-block">
+        <div class="project-block">
             <div class="project-image">
                 <a href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail(); ?>

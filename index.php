@@ -13,10 +13,10 @@
                         <h1 class="projects-hero-title">
                             <span>
                                 <?php
-                                    if ($taxonomy_slug === 'category') 
+                                    if ($taxonomy_slug === 'project_category') 
                                         echo 'Category';
 
-                                        else if ($taxonomy_slug === 'year') 
+                                        else if ($taxonomy_slug === 'project_year') 
                                             echo 'Year';
 
                                             else
@@ -39,7 +39,7 @@
                             <a href="#" class="nav-link dropdown-toggle">
                                 <span>
                                     <?php
-                                        if ($taxonomy_slug === 'category') 
+                                        if ($taxonomy_slug === 'project_category') 
                                             echo $term_name;
 
                                             else 
@@ -51,7 +51,7 @@
                             <ul class="dropdown-menu">
                                 <?php
                                     $args = array(
-                                        'taxonomy' => 'category'
+                                        'taxonomy' => 'project_category'
                                     );
 
                                     $cats = get_categories($args);
@@ -69,7 +69,7 @@
                             <a href="#" class="nav-link dropdown-toggle">
                                 <span>
                                     <?php
-                                        if ($taxonomy_slug === 'year') 
+                                        if ($taxonomy_slug === 'project_year') 
                                             echo $term_name;
 
                                             else 
@@ -81,7 +81,7 @@
                             <ul class="dropdown-menu">
                                 <?php
                                     $args = array(
-                                        'taxonomy' => 'year'
+                                        'taxonomy' => 'project_year'
                                     );
 
                                     $cats = get_categories($args);

@@ -124,7 +124,14 @@
                     <h2 class="section-title text-center text-md-start">
                         Our projects
                     </h2>
-                    <?php get_template_part( 'template-parts/sliders/slider-projects' ); ?>
+                    <?php get_template_part( 'template-parts/sliders/slider-interrior-projects' ); ?>
+                    <div class="section-button">
+                        <a href="<?php echo get_post_type_archive_link('projects'); ?>">
+                            <button class="button">
+                                View all projects
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

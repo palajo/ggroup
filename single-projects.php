@@ -308,7 +308,25 @@
                     <p class="section-description text-start text-md-center d-none d-md-block">
                         <?php echo the_field('project_team_description', false, false); ?>
                     </p>
-                    <?php get_template_part( 'template-parts/sliders/slider-team' ); ?>
+                    <?php if (have_rows('project_team_member_block')): ?>
+                        <div class="team-slider">
+                            <?php while (have_rows('project_team_member_block')): the_row(); ?>
+                                <div class="member-block">
+                                    <div class="member-image">
+                                        <img src="<?php echo get_sub_field('member_image')['url']; ?>" alt="<?php echo get_sub_field('member_image')['alt']; ?>" />
+                                    </div>
+                                    <div class="member-about">
+                                        <div class="member-name">
+                                            <?php echo the_sub_field('member_name'); ?>
+                                        </div>
+                                        <div class="member-position">
+                                            <?php echo the_sub_field('member_position'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endwhile; ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
