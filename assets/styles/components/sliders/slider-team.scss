@@ -21,7 +21,7 @@
                 object-fit: cover;
                 object-position: center;
 
-                transition: 0.2s ease;
+                transition: 0.3s ease;
             }    
         }
 
@@ -31,16 +31,22 @@
             left: 0;
             bottom: 0;
 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
             width: 100%;
-            padding: 10px 15px;
+            height: 0;
+
+            padding: 0 15px;
 
             background: $secondary;
             color: #fff;
 
             text-align: center;
 
-            transform: translateY(64px);
-            transition: transform 0.3s ease;
+            opacity: 0;
+            transition: height 0.4s ease, opacity 0.4s ease;
 
 
             .member-name {
@@ -70,7 +76,9 @@
                 }
             }
             .member-about {
-                transform: translateY(0);
+                visibility: visible;
+                opacity: 1;
+                height: 110px;
             }
         }
 

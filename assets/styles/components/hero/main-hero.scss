@@ -1,5 +1,5 @@
 section.main-hero {
-    height: calc(100vh - 110px);
+    height: calc(100vh - 115px);
     min-height: 800px;
 
     background: url('../../../images/banners/mainpage-bg.png') no-repeat;
@@ -131,7 +131,7 @@ section.main-hero {
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
     section.main-hero {
-        height: calc(100vh - 90px);
+        height: calc(100vh - 95px);
         min-height: 700px;
 
         background-size: auto 600px;
@@ -148,7 +148,7 @@ section.main-hero {
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
     section.main-hero {
-        height: calc(100vh - 90px);
+        height: calc(100vh - 95px);
         min-height: 700px;
 
         background-size: auto 700px;

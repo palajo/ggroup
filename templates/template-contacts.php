@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-7 contacts-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d643.3677463122051!2d24.034190460769146!3d49.83360726305589!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea77690e785aad1b!2sGlobarch%20Group!5e0!3m2!1sru!2sua!4v1621930265936!5m2!1sru!2sua" title="globarch-group-location" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.7624663346865!2d24.041741115708902!3d49.82812947939438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add5ba2d9f257%3A0xb0541fb74816b996!2z0LLRg9C70LjRhtGPINCe0LvRjNCz0Lgg0JHQsNGB0LDRgNCw0LEsIDMsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1626363445012!5m2!1suk!2sua" title="globarch-group-location" loading="lazy"></iframe>
                 </div>
             </div>
         </div>

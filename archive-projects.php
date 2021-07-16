@@ -18,10 +18,79 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filters-row">
+                        <div class="filter-block dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">
+                                <span>
+                                    All
+                                </span>
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <?php
+                                    $args = array(
+                                        'taxonomy' => 'category'
+                                    );
+
+                                    $cats = get_categories($args);
+                                    foreach($cats as $cat):
+                                ?>
+                                    <li>
+                                        <a href="<?php echo get_category_link( $cat->term_id ) ?>" class="dropdown-item">
+                                            <?php echo $cat->name; ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                        <div class="filter-block dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">
+                                <span>
+                                    All
+                                </span>
+                                Year
+                            </a>
+                            <ul class="dropdown-menu">
+                                <?php
+                                    $args = array(
+                                        'taxonomy' => 'year'
+                                    );
+
+                                    $cats = get_categories($args);
+                                    foreach($cats as $cat):
+                                ?>
+                                    <li>
+                                        <a href="<?php echo get_category_link( $cat->term_id ) ?>" class="dropdown-item">
+                                            <?php echo $cat->name; ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section">
         <div class="container-fluid p-0">
             <?php 
-                $loop = new WP_Query(array('post_type' => 'projects'));
+                $loop = new WP_Query(array(
+                    'post_type' => 'projects',
+                    /*
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'category',
+                            'field'    => 'slug',
+                            'terms' => 'architecture-planning'
+                        )
+                    )
+                    */
+                ));
 
                 if ($loop->have_posts()):
                     while ($loop->have_posts()):

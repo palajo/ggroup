@@ -129,6 +129,15 @@ jQuery(document).ready(function ($) {
                 }
             ]
         });
+
+        // file upload, display file title
+        $('.wpcf7-file').change(function() {
+            var filename = $(this)[0].files[0].name;
+            $(this).closest('label').text(filename);
+        });
+
+        // masked input for phone field
+        // $(".wpcf7-tel").mask("+38 (999) 99-99-999");
     });
 
     $(window).on('resize', function(){

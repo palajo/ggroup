@@ -7714,8 +7714,7 @@ ul.nav.flex-column {
     text-transform: uppercase;
     padding: 15px 15px;
     background: none;
-    border-bottom: 1px solid #292B2D;
-    white-space: pre-wrap; }
+    border-bottom: 1px solid #292B2D; }
     .dropdown.filter-block ul.dropdown-menu li a.dropdown-item:hover {
       color: rgba(41, 43, 45, 0.7); }
 
@@ -7912,7 +7911,7 @@ button.button {
 /* ----------------------------------------- */
 /* section */
 main {
-  min-height: calc(100vh - 110px); }
+  min-height: calc(100vh - 115px); }
   main section .section-title {
     margin-bottom: 60px; }
   main section .section-description {
@@ -7986,7 +7985,7 @@ main {
 
 header {
   position: relative;
-  padding: 15px 0;
+  padding: 20px 0 15px 0;
   z-index: 1; }
   header .container .row {
     justify-content: space-between; }
@@ -8046,8 +8045,8 @@ header {
     top: 80px;
     left: 0;
     width: 100vw !important;
-    height: calc(100% - 80px);
-    max-height: calc(100% - 80px);
+    height: calc(100% - 85px);
+    max-height: calc(100% - 85px);
     padding: 20px 30px;
     background: #fff;
     overflow: auto;
@@ -8177,7 +8176,7 @@ footer {
     display: none; } }
 
 section.main-hero {
-  height: calc(100vh - 110px);
+  height: calc(100vh - 115px);
   min-height: 800px;
   background: url("../../../images/banners/mainpage-bg.png") no-repeat;
   background-size: auto 100%;
@@ -8253,7 +8252,7 @@ section.main-hero {
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   section.main-hero {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 95px);
     min-height: 700px;
     background-size: auto 600px; }
     section.main-hero .container .row .main-hero-content {
@@ -8261,7 +8260,7 @@ section.main-hero {
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   section.main-hero {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 95px);
     min-height: 700px;
     background-size: auto 700px; }
     section.main-hero .container .row .main-hero-content {
@@ -8846,18 +8845,22 @@ section.about-hero {
         height: 350px;
         object-fit: cover;
         object-position: center;
-        transition: 0.2s ease; }
+        transition: 0.3s ease; }
     .team-slider .member-block .member-about {
       position: absolute;
       left: 0;
       bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       width: 100%;
-      padding: 10px 15px;
+      height: 0;
+      padding: 0 15px;
       background: rgba(41, 43, 45, 0.7);
       color: #fff;
       text-align: center;
-      transform: translateY(64px);
-      transition: transform 0.3s ease; }
+      opacity: 0;
+      transition: height 0.4s ease, opacity 0.4s ease; }
       .team-slider .member-block .member-about .member-name {
         font-size: 18px;
         line-height: 24px;
@@ -8872,7 +8875,9 @@ section.about-hero {
     .team-slider .member-block:hover .member-image img {
       transform: translateY(15px); }
     .team-slider .member-block:hover .member-about {
-      transform: translateY(0); }
+      visibility: visible;
+      opacity: 1;
+      height: 110px; }
   .team-slider .slider-arrow {
     cursor: pointer;
     position: absolute;
@@ -9106,7 +9111,7 @@ form {
           position: absolute;
           z-index: -1;
           opacity: 0; }
-        form .form-row .form-block .checkbox-input label {
+        form .form-row .form-block .checkbox-input .wpcf7-list-item-label {
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -9114,8 +9119,8 @@ form {
           font-size: 14px;
           line-height: 20px;
           color: rgba(41, 43, 45, 0.7);
-          text-transform: unset; }
-          form .form-row .form-block .checkbox-input label::before {
+          text-transform: none; }
+          form .form-row .form-block .checkbox-input .wpcf7-list-item-label::before {
             content: '';
             display: block;
             width: 30px;
@@ -9130,14 +9135,35 @@ form {
             background-repeat: no-repeat;
             margin-right: 30px;
             transition: 0.2s ease; }
-        form .form-row .form-block .checkbox-input input[type="checkbox"]:not(:disabled):not(:checked) + label:hover::before {
+        form .form-row .form-block .checkbox-input input[type="checkbox"]:not(:disabled):not(:checked) + .wpcf7-list-item-label:hover::before {
           background-color: #C0C0C0; }
-        form .form-row .form-block .checkbox-input input[type="checkbox"]:not(:disabled):active + label::before {
+        form .form-row .form-block .checkbox-input input[type="checkbox"]:not(:disabled):active + .wpcf7-list-item-label::before {
           background-color: #292B2D; }
-        form .form-row .form-block .checkbox-input input[type="checkbox"]:checked + label::before {
+        form .form-row .form-block .checkbox-input input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
           background-color: #292B2D; }
+      form .form-row .form-block .wpcf7-list-item {
+        margin: 0; }
+      form .form-row .form-block .wpcf7-not-valid-tip {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 5px; }
+      form .form-row .form-block .form-submit-row {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        form .form-row .form-block .form-submit-row .ajax-loader {
+          position: absolute;
+          bottom: -39px;
+          left: calc(50% - 12px);
+          margin: 0; }
   form button {
     align-self: center; }
+  form .wpcf7-response-output {
+    border: 1px solid rgba(41, 43, 45, 0.15) !important;
+    padding: 10px 25px !important;
+    margin: 25px 0 0 0 !important; }
 
 .contact-form {
   position: relative;
@@ -9198,7 +9224,7 @@ form {
   display: flex;
   flex-wrap: wrap; }
   .filters-row .filter-block {
-    width: 25%; }
+    width: 50%; }
     .filters-row .filter-block.dropdown .dropdown-toggle {
       border-right: 0; }
     .filters-row .filter-block.dropdown .dropdown-menu {
