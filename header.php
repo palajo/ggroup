@@ -54,11 +54,6 @@
                                             UA
                                         </a>
                                     </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            RU
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                             <div class="contacts-phone">

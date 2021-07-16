@@ -1,6 +1,9 @@
 <?php /* Template Name: Homepage Template */ ?>
 <?php get_header(); ?>
     <section class="main-hero" data-bg="<?php echo get_field('hero_background')['url']; ?>">
+        <?php
+            $social = get_field('social_media', 'option');
+        ?>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-xxl-5">

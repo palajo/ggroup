@@ -8216,7 +8216,7 @@ section.main-hero {
     height: auto;
     min-height: auto;
     padding: 25px 0;
-    background-size: auto 180px;
+    background-size: 100% 180px;
     background-position: left 95px;
     margin-bottom: 0; }
     section.main-hero .container .row .main-hero-content {
