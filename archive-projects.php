@@ -28,7 +28,7 @@
                                 <span>
                                     All
                                 </span>
-                                Categories
+                                Category
                             </a>
                             <ul class="dropdown-menu">
                                 <?php

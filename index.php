@@ -5,13 +5,97 @@
         $term = get_term_by('slug', $term_slug, $taxonomy_slug);
         $term_name = $term->name;
     ?>
-    <section class="section">
+    <section class="projects-hero">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>
-                        <?php echo $term_name; ?>
-                    </h1>
+                    <div class="projects-hero-content">
+                        <h1 class="projects-hero-title">
+                            <span>
+                                <?php
+                                    if ($taxonomy_slug === 'category') 
+                                        echo 'Category';
+
+                                        else if ($taxonomy_slug === 'year') 
+                                            echo 'Year';
+
+                                            else
+                                                echo 'Filter'
+                                ?>
+                            </span>
+                            <?php echo $term_name; ?>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filters-row">
+                        <div class="filter-block dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">
+                                <span>
+                                    <?php
+                                        if ($taxonomy_slug === 'category') 
+                                            echo $term_name;
+
+                                            else 
+                                                echo 'All';
+                                    ?>
+                                </span>
+                                Category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <?php
+                                    $args = array(
+                                        'taxonomy' => 'category'
+                                    );
+
+                                    $cats = get_categories($args);
+                                    foreach($cats as $cat):
+                                ?>
+                                    <li>
+                                        <a href="<?php echo get_category_link( $cat->term_id ) ?>" class="dropdown-item">
+                                            <?php echo $cat->name; ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                        <div class="filter-block dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">
+                                <span>
+                                    <?php
+                                        if ($taxonomy_slug === 'year') 
+                                            echo $term_name;
+
+                                            else 
+                                                echo 'All';
+                                    ?>
+                                </span>
+                                Year
+                            </a>
+                            <ul class="dropdown-menu">
+                                <?php
+                                    $args = array(
+                                        'taxonomy' => 'year'
+                                    );
+
+                                    $cats = get_categories($args);
+                                    foreach($cats as $cat):
+                                ?>
+                                    <li>
+                                        <a href="<?php echo get_category_link( $cat->term_id ) ?>" class="dropdown-item">
+                                            <?php echo $cat->name; ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,4 +141,5 @@
             ?>
         </div>
     </section>
+    <?php get_template_part( 'template-parts/sections/section-contact' ); ?>
 <?php get_footer(); ?>
